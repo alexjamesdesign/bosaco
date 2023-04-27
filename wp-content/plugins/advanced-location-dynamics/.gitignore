@@ -1,0 +1,7 @@
+composer.lock
+.idea
+prepros-6.config
+/.env
+.DS_Store
+/build
+/vendor-bin

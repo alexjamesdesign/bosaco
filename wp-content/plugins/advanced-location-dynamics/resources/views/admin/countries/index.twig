@@ -1,0 +1,47 @@
+<div class="adv-ld-container">
+
+    <h1>Installed Packs</h1>
+
+    {% for country in installedCountries %}
+    
+        <div class="adv-ld-panel">
+        
+            <div class="adv-ld-panel__top">{{ country.code }} Location Pack (Installed)</div>
+        
+            <div class="adv-ld-panel__content">
+                <p>Locations for the {{ country.name }}</p>
+                <p><i>Last Updated: {{ country.last_updated}}</i></p>
+            </div>
+        
+            <div class="adv-ld-panel__bottom">
+                <button class="button">Check Update</button>
+                <button class="button">Update</button>
+                <button href="admin.php?page=advanced-location-dynamics-manage-country&do=delete&cc={{ country.code }}" class="button button-primary">Uninstall</button>
+            </div>
+        
+        </div>
+
+    {% endfor %}
+    
+    <h1>Available Packs</h1>
+    
+    {% for country in availableCountries %}
+    
+        <div class="adv-ld-panel">
+        
+            <div class="adv-ld-panel__top">{{ country.code }} Location Pack
+            </div>
+        
+            <div class="adv-ld-panel__content">
+                <p>Locations for the {{ country.name }}</p>
+            </div>
+        
+            <div class="adv-ld-panel__bottom">
+                <a href="admin.php?page=advanced-location-dynamics-manage-country&do=install&cc={{ country.code }}" class="button">Install</a>
+            </div>
+        
+        </div>
+    
+    {% endfor %}
+
+</div>

@@ -1,0 +1,34 @@
+{% include 'admin/partials/header.twig' %}
+
+<div class="adv-ld-container">
+
+    <form method="post" action="" class="adv-ld-panel">
+
+        <div class="adv-ld-panel__top">
+            Advanced Settings
+        </div>
+
+        <div class="adv-ld-panel__content">
+            <p>Please read the advanced documentation <a href="https://advanced.adtrakdev.com/" target="newtab">here</a> before activating.</p>
+            <div>
+                <label class="adv-ld-panel__switch">
+                    <input type="checkbox" name="ald_advanced" value="1" {% if advanced == 1 %}checked{% endif %}>
+                    <span class="adv-ld-panel__slider adv-ld-panel__slider--round"></span>
+                </label>
+                <span>Switch on advanced features</span>
+            </div>
+            <div>
+                <label>Default tracking number</label><br>
+                <input class="adv-input" name="ald_advanced_number" value="{{ advanced_number }}" placeholder="0800 000 0000">
+            </div>
+        </div>
+
+        <div class="adv-ld-panel__bottom">
+            <button class="button button-primary">Save</button>
+        </div>
+
+    </form>
+
+</div>
+
+{% include 'admin/partials/footer.twig' %}

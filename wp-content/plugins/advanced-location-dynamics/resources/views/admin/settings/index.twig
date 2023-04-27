@@ -1,0 +1,25 @@
+{% include 'admin/partials/header.twig' %}
+
+<div class="adv-ld-container">
+
+    <form method="post" action="" class="adv-ld-panel">
+
+        <div class="adv-ld-panel__top">
+            Settings
+        </div>
+
+        <div class="adv-ld-panel__content">
+            <label for="license-key">License Key</label>
+            <input name="license-key" type="text" value="{{ licenseKey }}">
+            <p>Your license key is currently <strong>{% if licenseValidity %}valid{% else %}invalid{% endif %}</strong></p>
+        </div>
+
+        <div class="adv-ld-panel__bottom">
+            <button class="button button-primary">Save</button>
+        </div>
+
+    </form>
+
+</div>
+
+{% include 'admin/partials/footer.twig' %}

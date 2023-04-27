@@ -1,0 +1,51 @@
+{
+  "name": "adtrak-child-tailwind-twig-timber",
+  "version": "1.0.0",
+  "description": "Standard theme for all Adtrak clients",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "cross-env NODE_ENV=production gulp build --production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Adtrak Media Ltd <hello@adtrak.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-multi-entry": "^3.0.1",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "@rollup/stream": "^1.0.0",
+    "browser-sync": "^2.27.7",
+    "cross-env": "^7.0.2",
+    "del": "^4.1.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.3.11",
+    "postcss-nested": "^5.0.6"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.8",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-terser": "^1.2.0",
+    "postcss-import": "^13.0.0",
+    "postcss-simple-vars": "^6.0.1",
+    "rollup": "^2.58.3",
+    "semver-regex": "^4.0.2",
+    "tailwindcss": "^2.2.17",
+    "tailwindcss-filters": "^3.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^17.2.1"
+  }
+}

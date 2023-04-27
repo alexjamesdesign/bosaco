@@ -1,0 +1,19 @@
+{% if options.social_links %}
+
+	<ul class="{{ ulClasses }}">
+
+		{% for social in options.social_links %}
+
+			<li class="{{ liClasses }}">
+				<a rel="noopener noreferrer" aria-label="{{ social.name }}" target="_blank" href="{{ social.url }}" class="{{ linkClasses }}">
+					<span class="sr-only">Visit our
+						{{ social.name }}</span>
+					{{ fn('icon', social.icon, iconClasses) }}
+				</a>
+			</li>
+
+		{% endfor %}
+
+	</ul>
+
+{% endif %}

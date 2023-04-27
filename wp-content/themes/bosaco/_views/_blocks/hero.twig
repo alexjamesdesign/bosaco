@@ -1,0 +1,54 @@
+{#
+  Title: Hero
+  Description: Hero
+  Category: formatting
+  Icon: cover-image
+  Keywords: hero runner
+  Mode: edit
+  SupportsAlign: center
+  SupportsMode: false
+  SupportsMultiple: false
+#}
+
+<div class="relative flex w-full pb-16 bg-secondary-light">
+
+	<div class="flex flex-wrap justify-center w-full px-8 py-12 text-center bg-secondary-light">
+    
+    {% for media_item in fields.hero_content %}
+      
+      {% if media_item.acf_fc_layout == 'text' %}
+        <p class="{{media_item.size}}">{{ media_item.hero_text }}</p>
+      {% endif %}
+
+      {% if media_item.acf_fc_layout == 'usp' %}
+
+        {% if media_item.usps %}
+        <div class="flex justify-center w-full">
+          {% for item in media_item.usps %}
+            <p class="px-3 usp">{{ function('icon', 'check', 'mr-2') }} {{ item.usp }}</p>
+          {% endfor %}
+          </div> 
+        {% endif %}
+        
+      {% endif %}
+
+      {% if media_item.acf_fc_layout == 'button' %}
+        <div class="w-full flex items-center justify-center flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-4 animate delay-{{loop.index}}" data-animate="fadeIn">
+          {% for item in media_item.button %}
+
+            {% include "_components/button.twig" with {
+              buttonText : item.text,
+              buttonColour : item.colour,
+              buttonLink : item.link.link,
+              buttonClass : "px-6 py-2 mt-2 font-bold md:mb-0"
+            } %}
+
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    {% endfor %}
+    
+	</div>
+
+</div>

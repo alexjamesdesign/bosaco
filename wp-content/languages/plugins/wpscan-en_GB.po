@@ -1,0 +1,1302 @@
+# Translation of Plugins - WPScan &#8211; WordPress Security Scanner - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - WPScan &#8211; WordPress Security Scanner - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-08 11:09:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - WPScan &#8211; WordPress Security Scanner - Stable (latest release)\n"
+
+#: app/Plugin.php:476
+msgid "You hit your API limit. To increase your daily API limit please upgrade via your "
+msgstr "You hit your API limit. To increase your daily API limit please upgrade via your "
+
+#: app/Settings.php:122
+msgid "Disable Security Checks"
+msgstr "Disable Security Checks"
+
+#: app/Report.php:76
+msgid "This vulnerability was fixed in version %s. We recommend that you update as soon as possible."
+msgstr "This vulnerability was fixed in version %s. We recommend that you update as soon as possible."
+
+#: app/Report.php:75
+msgid "We are not aware of a fix for this vulnerability."
+msgstr "We are not aware of a fix for this vulnerability."
+
+#: app/Notification.php:295
+msgid "[WPScan Alert] Some vulnerabilities were found in %s!"
+msgstr "[WPScan Alert] Some vulnerabilities were found in %s!"
+
+#: app/Notification.php:289
+msgid "The WPScan Team"
+msgstr "The WPScan Team"
+
+#: app/Notification.php:289
+msgid "Thank you,"
+msgstr "Thank you,"
+
+#: app/Notification.php:287
+msgid "Found our WPScan security plugin helpful? Please %s"
+msgstr "Found our WPScan security plugin helpful? Please %s"
+
+#: app/Notification.php:237
+msgid "The %s found some vulnerabilities in %s, listed below."
+msgstr "The %s found some vulnerabilities in %s, listed below."
+
+#: libraries/action-scheduler/classes/ActionScheduler_DataController.php:137
+msgid "Attempting to reduce used memory..."
+msgstr "Attempting to reduce used memory..."
+
+#. translators: %d: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_DataController.php:133
+msgid "Stopped the insanity for %d second"
+msgid_plural "Stopped the insanity for %d seconds"
+msgstr[0] "Sleeping for %d second"
+msgstr[1] "Sleeping for %d seconds"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:42
+msgid "No actions found in trash"
+msgstr "No actions found in bin"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:41
+msgid "No actions found"
+msgstr "No actions found"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:40
+msgid "Search Scheduled Actions"
+msgstr "Search Scheduled Actions"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:38
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:39
+msgid "View Action"
+msgstr "View Action"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:37
+msgid "New Scheduled Action"
+msgstr "New Scheduled Action"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:36
+msgid "Edit Scheduled Action"
+msgstr "Edit Scheduled Action"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:35
+msgid "Edit"
+msgstr "Edit"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:34
+msgid "Add New Scheduled Action"
+msgstr "Add New Scheduled Action"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:33
+msgid "Add"
+msgstr "Add"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:32
+msgctxt "Admin menu name"
+msgid "Scheduled Actions"
+msgstr "Scheduled Actions"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:31
+msgid "Scheduled Action"
+msgstr "Scheduled Action"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:20
+msgid "Scheduled actions are hooks triggered on a cetain date and time."
+msgstr "Scheduled actions are hooks triggered on a cetain date and time."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:865
+msgid "%s Support for strings longer than this will be removed in a future version."
+msgstr "%s Support for strings longer than this will be removed in a future version."
+
+#. translators: %s: action ID
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:741
+msgid "Unable to mark failure on action %s. Database error."
+msgstr "Unable to mark failure on action %s. Database error."
+
+#. translators: %s: action ID
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:729
+msgid "Unable to unlock claim on action %s. Database error."
+msgstr "Unable to unlock claim on action %s. Database error."
+
+#. translators: %s: claim ID
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:714
+msgid "Unable to unlock claim %s. Database error."
+msgstr "Unable to unlock claim %s. Database error."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:293
+msgid "Invalid schedule. Cannot save action."
+msgstr "Invalid schedule. Cannot save action."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:72
+msgid "Unable to save action."
+msgstr "Unable to save action."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:865
+msgid "Unknown status found for action."
+msgstr "Unknown status found for action."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:863
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:765
+msgid "Invalid action ID. No status found."
+msgstr "Invalid action ID. No status found."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:690
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:619
+msgid "Unable to claim actions. Database error."
+msgstr "Unable to claim actions. Database error."
+
+#. translators: %s: group name
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:676
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:639
+msgid "The group \"%s\" does not exist."
+msgstr "The group \"%s\" does not exist."
+
+#. translators: %s: action ID
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:470
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:560
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:592
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:802
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:844
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:467
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:478
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:505
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:798
+msgid "Unidentified action %s"
+msgstr "Unidentified action %s"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:278
+msgid "Invalid value for select or count parameter. Cannot query actions."
+msgstr "Invalid value for select or count parameter. Cannot query actions."
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:77
+msgid "Database error."
+msgstr "Database error."
+
+#. translators: %s: count
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostStatusRegistrar.php:53
+msgid "In-Progress <span class=\"count\">(%s)</span>"
+msgid_plural "In-Progress <span class=\"count\">(%s)</span>"
+msgstr[0] "In-Progress <span class=\"count\">(%s)</span>"
+msgstr[1] "In-Progress <span class=\"count\">(%s)</span>"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostStatusRegistrar.php:51
+msgctxt "post"
+msgid "In-Progress"
+msgstr "In-Progress"
+
+#. translators: %s: count
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostStatusRegistrar.php:38
+msgid "Failed <span class=\"count\">(%s)</span>"
+msgid_plural "Failed <span class=\"count\">(%s)</span>"
+msgstr[0] "Failed <span class=\"count\">(%s)</span>"
+msgstr[1] "Failed <span class=\"count\">(%s)</span>"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostStatusRegistrar.php:36
+msgctxt "post"
+msgid "Failed"
+msgstr "Failed"
+
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_TaxonomyRegistrar.php:14
+msgid "Action Group"
+msgstr "Action Group"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:117
+msgid "Newest Scheduled Date"
+msgstr "Newest Scheduled Date"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:116
+msgid "Oldest Scheduled Date"
+msgstr "Oldest Scheduled Date"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:115
+msgid "Count"
+msgstr "Count"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:113
+msgid "Action Status"
+msgstr "Action Status"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:109
+msgid "Data store:"
+msgstr "Data store:"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:105
+msgid "Version:"
+msgstr "Version:"
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:102
+msgid "This section shows details of Action Scheduler."
+msgstr "This section shows details of Action Scheduler."
+
+#: libraries/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:102
+msgid "Action Scheduler"
+msgstr "Action Scheduler"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:149
+msgid "Activity log for the action."
+msgstr "Activity log for the action."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:148
+msgid "The date/time the action is/was scheduled to run."
+msgstr "The date/time the action is/was scheduled to run."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:148
+msgid "Scheduled"
+msgstr "Scheduled"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:147
+msgid "The action's schedule frequency."
+msgstr "The action's schedule frequency."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:146
+msgid "Optional action group."
+msgstr "Optional action group."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:145
+msgid "Optional data array passed to the action hook."
+msgstr "Optional data array passed to the action hook."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:144
+msgid "Action statuses are Pending, Complete, Canceled, Failed"
+msgstr "Action statuses are Pending, Complete, Cancelled, Failed"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:143
+msgid "Name of the action hook that will be triggered."
+msgstr "Name of the action hook that will be triggered."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:141
+msgid "Scheduled Action Columns"
+msgstr "Scheduled Action Columns"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:139
+msgid "Columns"
+msgstr "Columns"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:131
+msgid "Action Scheduler is a scalable, traceable job queue for background processing large sets of actions. Action Scheduler works by triggering an action hook to run at some time in the future. Scheduled actions can also be scheduled to run on a recurring schedule."
+msgstr "Action Scheduler is a scalable, traceable job queue for background processing large sets of actions. Action Scheduler works by triggering an action hook to run at some time in the future. Scheduled actions can also be scheduled to run on a recurring schedule."
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:129
+msgid "About Action Scheduler %s"
+msgstr "About Action Scheduler %s"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:127
+msgid "About"
+msgstr "About"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler.php:195
+msgid "%s() was called before the Action Scheduler data store was initialized"
+msgstr "%s() was called before the Action Scheduler data store was initialised"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Store.php:305
+msgid "Canceled"
+msgstr "Cancelled"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Store.php:304
+msgid "Failed"
+msgstr "Failed"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Store.php:303
+msgid "In-progress"
+msgstr "In-progress"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Store.php:302
+msgid "Pending"
+msgstr "Pending"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Store.php:301
+msgid "Complete"
+msgstr "Complete"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Store.php:227
+msgid "ActionScheduler_Action::$args too long. To ensure the args column can be indexed, action args should not be more than %d characters when encoded as JSON."
+msgstr "ActionScheduler_Action::$args too long. To ensure the args column can be indexed, action args should not be more than %d characters when encoded as JSON."
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php:672
+msgid "Search"
+msgstr "Search"
+
+#. translators: %s: search query
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php:567
+msgid "Search results for \"%s\""
+msgstr "Search results for \"%s\""
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php:467
+msgid "Filter"
+msgstr "Filter"
+
+#. translators: %s: exception message
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:156
+msgid "There was a failure scheduling the next instance of this action: %s"
+msgstr "There was a failure scheduling the next instance of this action: %s"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:148
+msgid "There was a failure fetching this action"
+msgstr "There was a failure fetching this action"
+
+#. translators: %s: exception message
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:146
+msgid "There was a failure fetching this action: %s"
+msgstr "There was a failure fetching this action: %s"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:131
+msgid "action ignored"
+msgstr "action ignored"
+
+#. translators: %s: context
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:129
+msgid "action ignored via %s"
+msgstr "action ignored via %s"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:123
+msgid "action reset"
+msgstr "action reset"
+
+#. translators: 1: error message 2: filename 3: line
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:118
+msgid "unexpected shutdown: PHP Fatal error %1$s in %2$s on line %3$s"
+msgstr "unexpected shutdown: PHP Fatal error %1$s in %2$s on line %3$s"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:112
+msgid "action timed out after %s seconds"
+msgstr "action timed out after %s seconds"
+
+#. translators: %s: exception message
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:105
+msgid "action failed: %s"
+msgstr "action failed: %s"
+
+#. translators: 1: context 2: exception message
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:102
+msgid "action failed via %1$s: %2$s"
+msgstr "action failed via %1$s: %2$s"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:94
+msgid "action complete"
+msgstr "action complete"
+
+#. translators: %s: context
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:92
+msgid "action complete via %s"
+msgstr "action complete via %s"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:84
+msgid "action started"
+msgstr "action started"
+
+#. translators: %s: context
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:82
+msgid "action started via %s"
+msgstr "action started via %s"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:76
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBLogger.php:134
+msgid "action canceled"
+msgstr "action cancelled"
+
+#: libraries/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:72
+msgid "action created"
+msgstr "action created"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ActionFactory.php:161
+msgid "Invalid action - must be a recurring action."
+msgstr "Invalid action - must be a recurring action."
+
+#. translators: 1: source action ID 2: source store class 3: destination action
+#. ID 4: destination store class
+#: libraries/action-scheduler/classes/migration/Runner.php:107
+msgid "Migrated action with ID %1$d in %2$s to ID %3$d in %4$s"
+msgstr "Migrated action with ID %1$d in %2$s to ID %3$d in %4$s"
+
+#. translators: %d: amount of actions
+#: libraries/action-scheduler/classes/migration/Runner.php:82
+msgid "Migrating %d action"
+msgid_plural "Migrating %d actions"
+msgstr[0] "Migrating %d action"
+msgstr[1] "Migrating %d actions"
+
+#: libraries/action-scheduler/classes/migration/Config.php:118
+msgid "Destination logger must be configured before running a migration"
+msgstr "Destination logger must be configured before running a migration"
+
+#: libraries/action-scheduler/classes/migration/Config.php:96
+msgid "Destination store must be configured before running a migration"
+msgstr "Destination store must be configured before running a migration"
+
+#: libraries/action-scheduler/classes/migration/Config.php:74
+msgid "Source logger must be configured before running a migration"
+msgstr "Source logger must be configured before running a migration"
+
+#: libraries/action-scheduler/classes/migration/Config.php:52
+msgid "Source store must be configured before running a migration"
+msgstr "Source store must be configured before running a migration"
+
+#: libraries/action-scheduler/classes/migration/Controller.php:142
+msgid "Action Scheduler migration in progress. The list of scheduled actions may be incomplete."
+msgstr "Action Scheduler migration in progress. The list of scheduled actions may be incomplete."
+
+#: libraries/action-scheduler/classes/migration/ActionMigrator.php:95
+msgid "Unable to remove source migrated action %s"
+msgstr "Unable to remove source migrated action %s"
+
+#. translators: %s: error message
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:85
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php:35
+#: libraries/action-scheduler/classes/migration/ActionScheduler_DBStoreMigrator.php:44
+msgid "Error saving action: %s"
+msgstr "Error saving action: %s"
+
+#. translators: 1: next cleanup message 2: github issue URL
+#: libraries/action-scheduler/classes/ActionScheduler_WPCommentCleaner.php:108
+msgid "Action Scheduler has migrated data to custom tables; however, orphaned log entries exist in the WordPress Comments table. %1$s <a href=\"%2$s\">Learn more &raquo;</a>"
+msgstr "Action Scheduler has migrated data to custom tables; however, orphaned log entries exist in the WordPress Comments table. %1$s <a href=\"%2$s\">Learn more &raquo;</a>"
+
+#. translators: %s: date interval
+#: libraries/action-scheduler/classes/ActionScheduler_WPCommentCleaner.php:103
+msgid "This data will be deleted in %s."
+msgstr "This data will be deleted in %s."
+
+#: libraries/action-scheduler/classes/ActionScheduler_QueueRunner.php:192
+msgid "Every minute"
+msgstr "Every minute"
+
+#. translators: %d refers to the total number of taskes completed
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:153
+msgid "%d scheduled task completed."
+msgid_plural "%d scheduled tasks completed."
+msgstr[0] "%d scheduled task completed."
+msgstr[1] "%d scheduled tasks completed."
+
+#. translators: %s refers to the exception error message
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:136
+msgid "There was an error running the action scheduler: %s"
+msgstr "There was an error running the action scheduler: %s"
+
+#. translators: %d refers to the total number of batches executed
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:117
+msgid "%d batch executed."
+msgid_plural "%d batches executed."
+msgstr[0] "%d batch executed."
+msgstr[1] "%d batches executed."
+
+#. translators: %d refers to how many scheduled taks were found to run
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php:100
+msgid "Found %d scheduled task"
+msgid_plural "Found %d scheduled tasks"
+msgstr[0] "Found %d scheduled task"
+msgstr[1] "Found %d scheduled tasks"
+
+#. translators: 1: action ID 2: exception message
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:170
+msgid "Error processing action %1$s: %2$s"
+msgstr "Error processing action %1$s: %2$s"
+
+#. translators: 1: action ID 2: hook name
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:155
+msgid "Completed processing action %1$s with hook: %2$s"
+msgstr "Completed processing action %1$s with hook: %2$s"
+
+#. translators: %s refers to the action ID
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:138
+msgid "Started processing action %s"
+msgstr "Started processing action %s"
+
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:113
+msgid "The claim has been lost. Aborting current batch."
+msgstr "The claim has been lost. Aborting current batch."
+
+#. translators: %d: amount of actions
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:93
+msgid "Running %d action"
+msgid_plural "Running %d actions"
+msgstr[0] "Running %d action"
+msgstr[1] "Running %d actions"
+
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:61
+msgid "There are too many concurrent batches."
+msgstr "There are too many concurrent batches."
+
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:59
+msgid "There are too many concurrent batches, but the run is forced to continue."
+msgstr "There are too many concurrent batches, but the run is forced to continue."
+
+#. translators: %s php class name
+#. translators: %s php class name
+#: libraries/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php:33
+#: libraries/action-scheduler/classes/WP_CLI/ProgressBar.php:47
+msgid "The %s class can only be run within WP CLI."
+msgstr "The %s class can only be run within WP-CLI."
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:610
+msgid "Search hook, args and claim ID"
+msgstr "Search hook, args and claim ID"
+
+#. translators: %s: date interval
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:461
+msgid " (%s)"
+msgstr " (%s)"
+
+#. translators: %s: date interval
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:458
+msgid " (%s ago)"
+msgstr " (%s ago)"
+
+#. translators: 1: action HTML 2: action ID 3: error message
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:412
+msgid "Could not process change for action: \"%1$s\" (ID: %2$d). Error: %3$s"
+msgstr "Could not process change for action: \"%1$s\" (ID: %2$d). Error: %3$s"
+
+#. translators: %s: action HTML
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:406
+msgid "Successfully processed change for action: %s"
+msgstr "Successfully processed change for action: %s"
+
+#. translators: %s: action HTML
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:402
+msgid "Successfully canceled action: %s"
+msgstr "Successfully cancelled action: %s"
+
+#. translators: %s: action HTML
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:398
+msgid "Successfully executed action: %s"
+msgstr "Successfully executed action: %s"
+
+#. translators: %d: seconds
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:377
+msgid "The next queue will begin processing in approximately %d seconds."
+msgstr "The next queue will begin processing in approximately %d seconds."
+
+#. translators: %s: process URL
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:374
+msgid "A new queue has begun processing. <a href=\"%s\">View actions in-progress &raquo;</a>"
+msgstr "A new queue has begun processing. <a href=\"%s\">View actions in-progress &raquo;</a>"
+
+#. translators: %s: amount of claims
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:357
+msgid "Maximum simultaneous queues already in progress (%s queue). No additional queues will begin processing until the current queues are complete."
+msgid_plural "Maximum simultaneous queues already in progress (%s queues). No additional queues will begin processing until the current queues are complete."
+msgstr[0] "Maximum simultaneous queues already in progress (%s queue). No additional queues will begin processing until the current queues are complete."
+msgstr[1] "Maximum simultaneous queues already in progress (%s queues). No additional queues will begin processing until the current queues are complete."
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:341
+msgid "It appears one or more database tables were missing. Attempting to re-create the missing table(s)."
+msgstr "It appears one or more database tables were missing. Attempting to recreate the missing table(s)."
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:243
+msgid "Non-repeating"
+msgstr "Non-repeating"
+
+#. translators: %s: time interval
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:237
+msgid "Every %s"
+msgstr "Every %s"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:201
+msgid "Now!"
+msgstr "Now!"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:174
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s second"
+msgstr[1] "%s seconds"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:169
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minute"
+msgstr[1] "%s minutes"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:164
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s hour"
+msgstr[1] "%s hours"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:159
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s day"
+msgstr[1] "%s days"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:154
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] "%s week"
+msgstr[1] "%s weeks"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:149
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "%s month"
+msgstr[1] "%s months"
+
+#. translators: %s: amount of time
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:144
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s year"
+msgstr[1] "%s years"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:134
+msgid "Cancel the action now to avoid it being run in future"
+msgstr "Cancel the action now to avoid it being run in future"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:130
+msgid "Process the action now as if it were run as part of a queue"
+msgstr "Process the action now as if it were run as part of a queue"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:122
+msgid "Claim ID"
+msgstr "Claim ID"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:149
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:102
+msgid "Log"
+msgstr "Log"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:101
+msgid "Scheduled Date"
+msgstr "Scheduled Date"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:147
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:100
+msgid "Recurrence"
+msgstr "Recurrence"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:146
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:99
+msgid "Group"
+msgstr "Group"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:145
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:98
+msgid "Arguments"
+msgstr "Arguments"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:144
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:97
+msgid "Status"
+msgstr "Status"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:143
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:96
+msgid "Hook"
+msgstr "Hook"
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:92
+msgid "Delete"
+msgstr "Delete"
+
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:60
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:75
+#: libraries/action-scheduler/classes/ActionScheduler_AdminView.php:76
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:89
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:19
+#: libraries/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:30
+msgid "Scheduled Actions"
+msgstr "Scheduled Actions"
+
+#. translators: 1: action ID 2: arguments
+#: libraries/action-scheduler/classes/ActionScheduler_InvalidActionException.php:40
+msgid "Action [%1$s] has invalid arguments. It cannot be JSON decoded to an array. $args = %2$s"
+msgstr "Action [%1$s] has invalid arguments. It cannot be JSON decoded to an array. $args = %2$s"
+
+#. translators: 1: action ID 2: schedule
+#: libraries/action-scheduler/classes/ActionScheduler_InvalidActionException.php:21
+msgid "Action [%1$s] has an invalid schedule: %2$s"
+msgstr "Action [%1$s] has an invalid schedule: %2$s"
+
+#: app/Checks/System.php:221 app/Checks/System.php:248 app/Plugin.php:249
+msgid "Running"
+msgstr "Running"
+
+#: security-checks/weak-passwords/check.php:88
+msgid "The %s users were found to have weak passwords. The users' passwords should be updated immediately."
+msgstr "The %s users were found to have weak passwords. The users' passwords should be updated immediately."
+
+#: security-checks/weak-passwords/check.php:82
+msgid "The %s user was found to have a weak password. The user's password should be updated immediately."
+msgstr "The %s user was found to have a weak password. The user's password should be updated immediately."
+
+#: app/Summary.php:122
+msgid "Add your API token to the settings page to be able to run a full scan."
+msgstr "Add your API token to the settings page to be able to run a full scan."
+
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:133
+#: views/deactivate.php:11
+msgid "Cancel"
+msgstr "Cancel"
+
+#: views/deactivate.php:10
+msgid "Deactivate"
+msgstr "Deactivate"
+
+#: views/deactivate.php:6
+msgid "Deactivating the plugin will remove the scheduled automated scanning cron event."
+msgstr "Deactivating the plugin will remove the scheduled automated scanning cron event."
+
+#: views/deactivate.php:3
+msgid "WPScan Warning"
+msgstr "WPScan Warning"
+
+#: security-checks/weak-passwords/check.php:50
+msgid "We were not able to brute force the password of any privileged user"
+msgstr "We were not able to brute force the password of any privileged user"
+
+#: security-checks/weak-passwords/check.php:39
+msgid "Checks if privileged users are using any passwords from our weak password list."
+msgstr "Checks if privileged users are using any passwords from our weak password list."
+
+#: security-checks/weak-passwords/check.php:28
+msgid "Weak Passwords"
+msgstr "Weak Passwords"
+
+#: security-checks/https/check.php:69
+msgid "The website does not seem to be using HTTPS (SSL/TLS) encryption for communications."
+msgstr "The website does not seem to be using HTTPS (SSL/TLS) encryption for communications."
+
+#: security-checks/https/check.php:50
+msgid "Your website seems to be using HTTPS"
+msgstr "Your website seems to be using HTTPS"
+
+#: security-checks/https/check.php:39
+msgid "Checks if your website is using HTTPS encryption for communications."
+msgstr "Checks if your website is using HTTPS encryption for communications."
+
+#: security-checks/https/check.php:28
+msgid "Website HTTPS"
+msgstr "Website HTTPS"
+
+#: security-checks/xmlrpc-enabled/check.php:86
+msgid "The XML-RPC interface is partly disabled, but still allows unauthenticated requests."
+msgstr "The XML-RPC interface is partly disabled, but still allows unauthenticated requests."
+
+#: app/Summary.php:120
+msgid "Click the Run All button to run a full vulnerability scan against your WordPress website."
+msgstr "Click the Run All button to run a full vulnerability scan against your WordPress website."
+
+#: app/Summary.php:81
+msgid "No scan run yet!"
+msgstr "No scan run yet!"
+
+#: app/Summary.php:110
+msgid "The next scan will automatically be run on "
+msgstr "The next scan will automatically be run on "
+
+#: app/Summary.php:102
+msgid "No full scan yet"
+msgstr "No full scan yet"
+
+#: app/Summary.php:92
+msgid "The last full scan was run on: "
+msgstr "The last full scan was run on: "
+
+#: app/Plugin.php:488
+msgid "Check API Status"
+msgstr "Check API Status"
+
+#: app/Plugin.php:485
+msgid "We were unable to connect to the WPScan API. Check the "
+msgstr "We were unable to connect to the WPScan API. Check the "
+
+#: app/Plugin.php:482
+msgid "There seems to be a problem with the WPScan API. Status: 502. Check the "
+msgstr "There seems to be a problem with the WPScan API. Status: 502. Check the "
+
+#: app/Plugin.php:479 app/Plugin.php:482 app/Plugin.php:485
+msgid "API Status"
+msgstr "API Status"
+
+#: app/Plugin.php:479
+msgid "There seems to be a problem with the WPScan API. Status: 500. Check the "
+msgstr "There seems to be a problem with the WPScan API. Status: 500. Check the "
+
+#: app/Plugin.php:470
+msgid "You have entered an invalid API Token"
+msgstr "You have entered an invalid API Token"
+
+#: views/report.php:173
+msgid "Actions"
+msgstr "Actions"
+
+#: views/report.php:172
+msgid "Result"
+msgstr "Result"
+
+#: views/report.php:165
+msgid "Security Checks"
+msgstr "Security Checks"
+
+#: security-checks/version-control/check.php:73
+msgid "A publicly accessible "
+msgstr "A publicly accessible "
+
+#: security-checks/version-control/check.php:50
+msgid "No version control files were found in the web root"
+msgstr "No version control files were found in the web root"
+
+#: security-checks/version-control/check.php:39
+msgid "Check if version control files, such as .git or .svn, are publicly accessible."
+msgstr "Check if version control files, such as .git or .svn, are publicly accessible."
+
+#: security-checks/version-control/check.php:28
+msgid "Version Control Files"
+msgstr "Version Control Files"
+
+#: security-checks/database-exports/check.php:76
+msgid "A publicly accessible database file  was found in"
+msgstr "A publicly accessible database file was found in"
+
+#: security-checks/database-exports/check.php:49
+msgid "No publicly accessible database export files were found"
+msgstr "No publicly accessible database export files were found"
+
+#: security-checks/database-exports/check.php:38
+msgid "Search the file system for database export files that are publicly accessible."
+msgstr "Search the file system for database export files that are publicly accessible."
+
+#: security-checks/database-exports/check.php:27
+msgid "Database Exports"
+msgstr "Database Exports"
+
+#: security-checks/wpconfig-backups/check.php:76
+msgid "A publicly accessible wp-config.php backup file  was found in"
+msgstr "A publicly accessible wp-config.php backup file was found in"
+
+#: security-checks/wpconfig-backups/check.php:50
+msgid "No publicly accessible wp-config.php backup files were found"
+msgstr "No publicly accessible wp-config.php backup files were found"
+
+#: security-checks/wpconfig-backups/check.php:39
+msgid "Search the file system for wp-config.php backup files that are publicly accessible."
+msgstr "Search the file system for wp-config.php backup files that are publicly accessible."
+
+#: security-checks/wpconfig-backups/check.php:28
+msgid "Configuration Backups"
+msgstr "Configuration Backups"
+
+#: security-checks/debuglog-files/check.php:71
+msgid "A publicly accessible debug.log file was found in"
+msgstr "A publicly accessible debug.log file was found in"
+
+#: security-checks/debuglog-files/check.php:50
+msgid "No publicly accessible debug log files were found"
+msgstr "No publicly accessible debug log files were found"
+
+#: security-checks/debuglog-files/check.php:39
+msgid "Search the file system for debug log files that are publicly accessible."
+msgstr "Search the file system for debug log files that are publicly accessible."
+
+#: security-checks/debuglog-files/check.php:28
+msgid "Debug Log Files"
+msgstr "Debug Log Files"
+
+#: security-checks/secret-keys/check.php:67
+msgid "The "
+msgstr "The "
+
+#: security-checks/secret-keys/check.php:50
+msgid "The WordPress secret keys were not the default values"
+msgstr "The WordPress secret keys were not the default values"
+
+#: security-checks/secret-keys/check.php:39
+msgid "Check if the WordPress secret keys have been changed."
+msgstr "Check if the WordPress secret keys have been changed."
+
+#: security-checks/secret-keys/check.php:28
+msgid "Secret Keys"
+msgstr "Secret Keys"
+
+#: security-checks/xmlrpc-enabled/check.php:78
+msgid "The XML-RPC interface is enabled. This significantly increases your site's attack surface."
+msgstr "The XML-RPC interface is enabled. This significantly increases your site's attack surface."
+
+#: security-checks/xmlrpc-enabled/check.php:49
+msgid "XML-RPC was found to be disabled"
+msgstr "XML-RPC was found to be disabled"
+
+#: security-checks/xmlrpc-enabled/check.php:38
+msgid "Check if the WordPress XML-RPC is enabled"
+msgstr "Check if the WordPress XML-RPC is enabled"
+
+#: security-checks/xmlrpc-enabled/check.php:27
+msgid "XML-RPC Enabled"
+msgstr "XML-RPC Enabled"
+
+#: app/Summary.php:138
+msgid "Run All"
+msgstr "Run All"
+
+#: app/Plugin.php:488
+msgid "We received an unknown response from the API. Status: "
+msgstr "We received an unknown response from the API. Status: "
+
+#: app/ignoreVulnerabilities.php:77
+msgid "Ignore Vulnerabilities"
+msgstr "Ignore Vulnerabilities"
+
+#: app/Notification.php:282
+msgid "Security check"
+msgstr "Security check"
+
+#: app/Checks/System.php:181 app/Report.php:167
+msgid "Not checked yet. Click the Run button to run a scan"
+msgstr "Not checked yet. Click the Run button to run a scan"
+
+#: app/Checks/Check.php:62
+msgid "Dismiss"
+msgstr "Dismiss"
+
+#: app/Checks/Check.php:55 app/Plugin.php:250
+#: libraries/action-scheduler/classes/ActionScheduler_ListTable.php:129
+msgid "Run"
+msgstr "Run"
+
+#: app/Settings.php:322
+msgid "Current server time is "
+msgstr "Current server time is "
+
+#: app/Report.php:113
+msgid "Not checked yet. Click the Run All button to run a scan"
+msgstr "Not checked yet. Click the Run All button to run a scan"
+
+#: app/Dashboard.php:44
+msgid "WPScan Status"
+msgstr "WPScan Status"
+
+#: app/Plugin.php:476
+msgid "WPScan profile page"
+msgstr "WPScan profile page"
+
+#: app/Settings.php:98
+msgid "WPScan API Token"
+msgstr "WPScan API Token"
+
+#: views/report.php:18
+msgid "Automated scanning is currently disabled using the <code>WPSCAN_DISABLE_SCANNING_INTERVAL</code> constant. You can still run scans manually."
+msgstr "Automated scanning is currently disabled using the <code>WPSCAN_DISABLE_SCANNING_INTERVAL</code> constant. You can still run scans manually."
+
+#: views/report.php:6
+msgid "<span class=\"wpscan-ignored\">Ignored from the settings</span>"
+msgstr "<span class=\"wpscan-ignored\">Ignored from the settings</span>"
+
+#: app/Settings.php:367
+msgid "WordPress Core"
+msgstr "WordPress Core"
+
+#: app/Settings.php:330
+msgid "This setting allows you to set the scanning hour for the <code>Daily</code> option. For the <code>Twice Daily</code> this will be the first scan and the second will be 12 hours later. For the <code>Hourly</code> it will affect the first scan only."
+msgstr "This setting allows you to set the scanning hour for the <code>Daily</code> option. For the <code>Twice Daily</code> this will be the first scan and the second will be 12 hours later. For the <code>Hourly</code> it will affect the first scan only."
+
+#: app/Settings.php:298 app/Settings.php:328
+msgid "Automated scanning is currently disabled using the <code>WPSCAN_DISABLE_SCANNING_INTERVAL</code> constant."
+msgstr "Automated scanning is currently disabled using the <code>WPSCAN_DISABLE_SCANNING_INTERVAL</code> constant."
+
+#: app/Settings.php:130
+msgid "Ignore Items"
+msgstr "Ignore Items"
+
+#: app/Settings.php:114
+msgid "Scanning Time"
+msgstr "Scanning Time"
+
+#: app/Settings.php:106
+msgid "Automated Scanning"
+msgstr "Automated Scanning"
+
+#: app/Settings.php:300
+msgid "This setting will change the frequency that the WPScan plugin will run an automatic scan. This is useful if you want your report, or notifications, to be updated more frequently. Please note that the more frequent scans are run, the more API requests are consumed."
+msgstr "This setting will change the frequency that the WPScan plugin will run an automatic scan. This is useful if you want your report, or notifications, to be updated more frequently. Please note that the more frequent scans are run, the more API requests are consumed."
+
+#: app/Settings.php:285
+msgid "Hourly"
+msgstr "Hourly"
+
+#: app/Settings.php:284
+msgid "Twice daily"
+msgstr "Twice daily"
+
+#: views/report.php:203
+msgid "Download as PDF"
+msgstr "Download as PDF"
+
+#: views/report.php:95 views/report.php:140
+msgid "Version <span>%s</span>"
+msgstr "Version <span>%s</span>"
+
+#: views/report.php:39
+msgid "WordPress"
+msgstr "WordPress"
+
+#: app/SiteHealth.php:80
+msgid "Your site is affected by %d security vulnerability"
+msgid_plural "Your site is affected by %d security vulnerabilities"
+msgstr[0] "Your site is affected by %d security vulnerability"
+msgstr[1] "Your site is affected by %d security vulnerabilities"
+
+#: app/SiteHealth.php:69
+msgid "Vulnerabilities can be exploited by hackers and cause harm to your website."
+msgstr "Vulnerabilities can be exploited by hackers and cause harm to your website."
+
+#: app/SiteHealth.php:64
+msgid "Security"
+msgstr "Security"
+
+#: app/SiteHealth.php:38
+msgid "WPScan Vulnerabilities Check"
+msgstr "WPScan Vulnerabilities Check"
+
+#: app/Account.php:153
+msgid "Resets In"
+msgstr "Resets In"
+
+#: app/Account.php:152
+msgid "Usage"
+msgstr "Usage"
+
+#: app/Account.php:149
+msgid "Plan"
+msgstr "Plan"
+
+#: app/Account.php:144
+msgid "Manage"
+msgstr "Manage"
+
+#: app/Account.php:144
+msgid "Upgrade"
+msgstr "Upgrade"
+
+#: app/Account.php:119
+msgid "Hour"
+msgstr "Hour"
+
+#: app/Account.php:119
+msgid "Hours"
+msgstr "Hours"
+
+#: app/Account.php:73
+msgid "Account Status"
+msgstr "Account Status"
+
+#: app/Account.php:49 app/Account.php:50 app/Account.php:51
+msgid "unlimited"
+msgstr "unlimited"
+
+#: app/Settings.php:257
+msgid "check your profile"
+msgstr "check your profile"
+
+#: app/Settings.php:256
+msgid "To regenerate your token, or upgrade your plan, %s."
+msgstr "To regenerate your token, or upgrade your plan, %s."
+
+#: app/Settings.php:250
+msgid "Your API Token has been set in a PHP file and been disabled here."
+msgstr "Your API Token has been set in a PHP file and been disabled here."
+
+#: app/Settings.php:213
+msgid "The WPScan WordPress security plugin uses our own constantly updated vulnerability database to stay up to date with the latest WordPress core, plugin and theme vulnerabilities. For the WPScan plugin to retrieve the potential vulnerabilities that may affect your site, you first need to configure your API token, that you can get for free from our database's website. Alternatively you can also set your API token in the wp-config.php file using the WPSCAN_API_TOKEN constant."
+msgstr "The WPScan WordPress security plugin uses our own constantly updated vulnerability database to stay up to date with the latest WordPress core, plugin and theme vulnerabilities. For the WPScan plugin to retrieve the potential vulnerabilities that may affect your site, you first need to configure your API token, that you can get for free from our database's website. Alternatively you can also set your API token in the wp-config.php file using the WPSCAN_API_TOKEN constant."
+
+#: app/Settings.php:175
+msgid " page, or, within the wp-config.php file."
+msgstr " page, or, within the wp-config.php file."
+
+#. Description of the plugin
+msgid "WPScan WordPress Security Scanner. Scans your system for security vulnerabilities listed in the WPScan Vulnerability Database."
+msgstr "WPScan WordPress Security Scanner. Scans your system for security vulnerabilities listed in the WPScan Vulnerability Database."
+
+#: app/Settings.php:172
+msgid "To use WPScan you have to setup your WPScan API Token. Either in the "
+msgstr "To use WPScan you have to setup your WPScan API Token. Either in the "
+
+#: app/Report.php:112
+msgid "No known vulnerabilities found to affect this version"
+msgstr "No known vulnerabilities found to affect this version"
+
+#: app/Summary.php:87
+msgid "Some vulnerabilities were found"
+msgstr "Some vulnerabilities were found"
+
+#: views/report.php:24
+msgid "The task is running in the background. This page will be reloaded once finished to display the results."
+msgstr "The task is running in the background. This page will be reloaded once finished to display the results."
+
+#: app/Dashboard.php:72
+msgid "No vulnerabilities found"
+msgstr "No vulnerabilities found"
+
+#: app/Dashboard.php:65
+msgid "No Report available"
+msgstr "No Report available"
+
+#: app/Report.php:43
+msgid "Report"
+msgstr "Report"
+
+#: app/Summary.php:85
+msgid "You need to add a WPScan API Token to the settings page"
+msgstr "You need to add a WPScan API Token to the settings page"
+
+#: app/SiteHealth.php:61 app/Summary.php:83
+msgid "No known vulnerabilities found"
+msgstr "No known vulnerabilities found"
+
+#: app/Summary.php:48
+msgid "Summary"
+msgstr "Summary"
+
+#: app/Plugin.php:877
+msgid "%d vulnerability found"
+msgid_plural "%d vulnerabilities found"
+msgstr[0] "%d vulnerability found"
+msgstr[1] "%d vulnerabilities found"
+
+#: app/Plugin.php:775
+msgid "Fixed in version %s"
+msgstr "Fixed in version %s"
+
+#: app/Plugin.php:774
+msgid "Not fixed"
+msgstr "Not fixed"
+
+#: app/Plugin.php:467
+msgid "Your API Token expired"
+msgstr "Your API Token expired"
+
+#: app/Plugin.php:406
+msgid "View"
+msgstr "View"
+
+#: app/Notification.php:270
+msgid "Theme"
+msgstr "Theme"
+
+#: app/Notification.php:257
+msgid "Plugin"
+msgstr "Plugin"
+
+#: app/Notification.php:236
+msgid "Hello,"
+msgstr "Hello,"
+
+#: app/Notification.php:175
+msgid "You have entered an invalid e-mail address."
+msgstr "You have entered an invalid email address."
+
+#: app/Notification.php:158
+msgid "Every Month"
+msgstr "Every Month"
+
+#: app/Notification.php:157
+msgid "Every Sunday"
+msgstr "Every Sunday"
+
+#: app/Notification.php:156
+msgid "Every Saturday"
+msgstr "Every Saturday"
+
+#: app/Notification.php:155
+msgid "Every Friday"
+msgstr "Every Friday"
+
+#: app/Notification.php:154
+msgid "Every Thursday"
+msgstr "Every Thursday"
+
+#: app/Notification.php:153
+msgid "Every Wednesday"
+msgstr "Every Wednesday"
+
+#: app/Notification.php:152
+msgid "Every Tuesday"
+msgstr "Every Tuesday"
+
+#: app/Notification.php:151
+msgid "Every Monday"
+msgstr "Every Monday"
+
+#: app/Notification.php:150 app/Settings.php:283
+msgid "Daily"
+msgstr "Daily"
+
+#: app/Notification.php:149
+msgid "Disabled"
+msgstr "Disabled"
+
+#: app/Notification.php:119
+msgid "Fill in the options below if you want to be notified by mail about new vulnerabilities. To add multiple e-mail addresses comma separate them."
+msgstr "Fill in the options below if you want to be notified by mail about new vulnerabilities. To add multiple email addresses comma separate them."
+
+#: app/Notification.php:84
+msgid "Notification"
+msgstr "Notification"
+
+#: app/Notification.php:67
+msgid "Send Alerts"
+msgstr "Send Alerts"
+
+#: app/Notification.php:59
+msgid "E-mail"
+msgstr "Email"
+
+#: app/Settings.php:393 views/report.php:119
+msgid "Themes"
+msgstr "Themes"
+
+#: app/Settings.php:394 views/report.php:71
+msgid "Plugins"
+msgstr "Plugins"
+
+#: views/report.php:46 views/report.php:78 views/report.php:126
+msgid "Vulnerabilities"
+msgstr "Vulnerabilities"
+
+#: views/report.php:45 views/report.php:77 views/report.php:125
+#: views/report.php:171
+msgid "Name"
+msgstr "Name"
+
+#: app/Settings.php:262
+msgid "Sign up"
+msgstr "Sign up"
+
+#: app/Settings.php:261
+msgid "%s to get your free API Token."
+msgstr "%s to get your free API Token."
+
+#: app/Settings.php:174 app/Settings.php:188 app/Settings.php:211
+msgid "Settings"
+msgstr "Settings"
+
+#: app/Dashboard.php:60
+msgid "To use WPScan you have to setup your WPScan API Token."
+msgstr "To use WPScan you have to setup your WPScan API Token."
+
+#. Author URI of the plugin
+msgid "https://wpscan.com/"
+msgstr "https://wpscan.com/"
+
+#. Author of the plugin
+msgid "WPScan Team"
+msgstr "WPScan Team"
+
+#. Plugin URI of the plugin
+msgid "http://wordpress.org/plugins/wpscan/"
+msgstr "https://wordpress.org/plugins/wpscan/"
+
+#. Plugin Name of the plugin
+msgid "WPScan"
+msgstr "WPScan"

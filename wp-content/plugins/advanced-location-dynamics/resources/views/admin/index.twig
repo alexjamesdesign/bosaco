@@ -1,0 +1,37 @@
+{% include 'admin/partials/header.twig' %}
+
+<div class="adv-ld-container">
+
+    <div class="adv-ld-panel">
+
+        <div class="adv-ld-panel__top">
+            Advanced Location Dynamics
+        </div>
+    
+        <div class="adv-ld-panel__pop-box"></div>
+
+        <div class="adv-ld-panel__content">
+            <p><strong>Advanced Feature Status: <a href="#" class="adv-ld-panel__info-pop" data-info="A check to see if this site is eligible for advanced features."><i class="fas fa-question-circle"></i></a></strong></p>
+            {% if advancedEligible %}
+                <h2>Eligible</h2>
+            {% else %}
+                <h2>Not Eligible</h2>
+            {% endif %}
+
+            <i>Unsure if this site should be eligible? Check with the account owner or paid marketer.</i>
+
+            <p><strong>License Status: <a href="#" class="adv-ld-panel__info-pop" data-info="A check to see if the site is authorised to use the plugin."><i class="fas fa-question-circle"></i></a></strong></p>
+            {% if licenseValidity %}
+                <h2>Valid</h2>
+            {% else %}
+                <h2>Invalid</h2>
+            {% endif %}
+
+            <i>This should be set to valid, if it isn't check your license key then check with the Development team asap.</i>
+        </div>
+
+    </div>
+
+</div>
+
+{% include 'admin/partials/footer.twig' %}

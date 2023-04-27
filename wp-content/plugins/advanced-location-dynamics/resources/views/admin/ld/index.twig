@@ -1,0 +1,95 @@
+{% include 'admin/partials/header.twig' %}
+
+<div class="adv-ld-container">
+
+    <div class="adv-ld-panel adv-ld-panel--full">
+
+        <div class="adv-ld-panel__top adv-ld-panel__top--eight">
+            <span class="adv-ld-panel__top-item">Location <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the location as a slug. e.g. new-york"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item">Location Label <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the location as plain text. e.g. New York"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item">Calltag <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the calltag prefix. e.g. Call us on:"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item">SEO Number <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the SEO number for this location. e.g. 0115 000 0000"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item">PPC Number <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the PPC number for this location. e.g. 0115 000 1111"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item">Insights Class <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the Insights class to enable number switching with CTM/ResponseTap"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item">Tracking Label <a href="#" class="adv-ld-panel__info-pop" data-info="Enter the tag which will appear in analytics when this number is clicked. e.g. Call Nottingham"><i class="fas fa-question-circle"></i></a></span>
+            <span class="adv-ld-panel__top-item"></span>
+        </div>
+        
+        <div class="adv-ld-panel__pop-box"></div>
+
+        <div id="adv-number-list" class="adv-ld-panel__content adv-ld-panel__content--no-padding">
+            <div class="adv-ld-panel__row adv-ld-panel__row--example adv-ld-panel__row--eight">
+                <form method="POST" action="#" class="adv-ld__number-form">
+                    <div class="adv-ld-panel__row-item"><input name="location-name" class="adv-ld-panel__input"></div>
+                    <div class="adv-ld-panel__row-item"><input name="location-label" class="adv-ld-panel__input"></div>
+                    <div class="adv-ld-panel__row-item"><input name="calltag" class="adv-ld-panel__input" required></div>
+                    <div class="adv-ld-panel__row-item"><input name="seo" class="adv-ld-panel__input" required></div>
+                    <div class="adv-ld-panel__row-item"><input name="ppc" class="adv-ld-panel__input"></div>
+                    <div class="adv-ld-panel__row-item"><input name="insights" class="adv-ld-panel__input"></div>
+                    <div class="adv-ld-panel__row-item"><input name="tracking-label" class="adv-ld-panel__input"></div>
+                    <div class="adv-ld-panel__row-item">
+                        <button class="button button-primary" type="submit">Save</button>
+                            <a class="adv-ld-panel__delete-row button button-danger" href="#">Delete</a>
+                    </div>
+                </form>
+            </div>
+            {% for number in numbers %}
+                <div data-id="{{ number.id }}" class="adv-ld-panel__row adv-ld-panel__row--eight">
+                    <div class="adv-ld-panel__row-item">{{ number.location_name }}</div>
+                    <div class="adv-ld-panel__row-item">{{ number.location_label }}</div>
+                    <div class="adv-ld-panel__row-item">{{ number.calltag }}</div>
+                    <div class="adv-ld-panel__row-item">{{ number.seo }}</div>
+                    <div class="adv-ld-panel__row-item">{{ number.ppc }}</div>
+                    <div class="adv-ld-panel__row-item">{{ number.insights }}</div>
+                    <div class="adv-ld-panel__row-item">{{ number.tracking_label }}</div>
+                    <div class="adv-ld-panel__row-item">
+                        <a class="adv-ld-panel__edit-row button" href="#">Edit</a>
+                        {% if number.location_name != 'uk' %}
+                            <a class="adv-ld-panel__delete-row button button-danger" href="#">Delete</a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="adv-ld-panel__bottom">
+            <!-- <button class="button button-primary">Save</button> -->
+            {{ pagination|raw }}
+            <a class="adv-ld__new-row button">+ Add New</a>
+        </div>
+
+    </div>
+    
+    <form class="adv-ld-panel" method="POST" action="">
+
+        <div class="adv-ld-panel__top">
+            Tracking Options
+        </div>
+
+        <div class="adv-ld-panel__content">
+            <h4>Insights Type <a href="#" class="adv-ld-panel__info-pop" data-info="Unsure? Check with the accout owner."><i class="fas fa-question-circle"></i></a></h4>
+            <label for="insight-type"><input type="radio" name="insight-type" value="0" {% if(tracking_type == 0) %}checked{% endif %}> None</label>
+            <label for="insight-type"><input type="radio" name="insight-type" value="1" {% if(tracking_type == 1) %}checked{% endif %}> CallTrackingMetrics</label>
+            <label for="insight-type"><input type="radio" name="insight-type" value="2" {% if(tracking_type == 2) %}checked{% endif %}> ResponseTap</label>
+            <h4>Tracking ID <a href="#" class="adv-ld-panel__info-pop" data-info="Unsure? Check with the accout owner."><i class="fas fa-question-circle"></i></a></h4>
+            <input type="text" name="tracking-id" placeholder="39829" value="{{ tracking_id }}">
+        </div>
+
+        <div class="adv-ld-panel__bottom">
+            <button class="button button-primary">Save</button>
+        </div>
+
+    </form>
+
+</div>
+
+{% include 'admin/partials/footer.twig' %}
+
+<div data-id="" class="adv-confirm-popup">
+    <div class="adv-confirm-popup__panel">
+        <h3>Are you sure?!</h3>
+        <p>The action you are about to take is irreversible! Are you sure you want to proceed</p>
+        <a href="#" class="adv-confirm-popup__confirm button">Yes!</a>
+        <a href="#" class="adv-confirm-popup__reject button button-primary">Oops, No!</a>
+    </div>
+</div>

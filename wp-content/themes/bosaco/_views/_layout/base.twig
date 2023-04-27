@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html {{site.language_attributes}}>
+
+	<head>
+		<meta charset="{{ site.charset }}">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+		{% block htmlheader %}
+			<style>
+				{{source("/dist/main.min.css")}}</style>
+		{% endblock %}
+
+		{{ options.google_analytics ? options.google_analytics }}
+
+		{{ options.schema ? options.schema }}
+
+		{{ options.meta_tags ? options.meta_tags }}
+
+		{{ function('wp_head') }}
+		
+	</head>
+
+	<body>
+
+		{# Set up a new mobile menu  #}
+		{% set mobileMenu = primaryMenu.items %}
+
+		{# Get the secondary menu items and set it to a new topMenu var #}
+		{% set topMenu = secondaryMenu.items %}
+
+		{# See if topMenu has content - if so, merge it into the mobileMenu #}
+		{% if topMenu | default(false) %}
+			{% set mobileMenu = mobileMenu|merge(topMenu) %}
+		{% endif %}
+
+		<nav class="mob-nav">
+			<div class="scroll-container">
+				<ul class="">
+					{% for item in mobileMenu %}
+						<li class="{{item.class}} {{ item.current ? 'current-menu-item' }}">
+							<a href="{{item.link}}">{{item.name}}</a>
+							{% if item.children %}
+								<ul class="sub-menu">
+									{% for child in item.children %}
+										<li class="{{child.class}}">
+											<a href="{{child.link}}">{{child.name}}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+
+			{% include "_layout/mobile-fixed-bar.twig" %}
+
+			{% block header %}
+				{% include "_layout/header.twig" %}
+			{% endblock %}
+
+			{% block content %}{% endblock %}
+
+			{% block footer %}
+				{% include "_layout/footer.twig" %}
+			{% endblock %}
+
+		</div>
+
+		{{ function('wp_footer') }}
+
+	</body>
+
+</html>

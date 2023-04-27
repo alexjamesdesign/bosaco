@@ -1,0 +1,21 @@
+{
+	"name": "getbilly/framework",
+    "description": "Baaa? Billy.",
+    "license": "MIT",
+    "homepage": "https://github.com/getbilly/framework",
+    "require": {
+        "illuminate/database": "6.*",
+        "symfony/var-dumper": "5.*",
+		"twig/twig": "2.*",
+		"illuminate/events": "6.*",
+		"laravel/helpers": "^1.1"
+    },
+	"autoload": {
+    	"psr-4": {
+			"Billy\\Framework\\": "Framework/"
+		}
+	},
+    "config": {
+        "preferred-install": "dist"
+    }
+}

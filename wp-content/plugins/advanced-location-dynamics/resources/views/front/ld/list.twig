@@ -1,0 +1,16 @@
+{% if type == 'dropdown' %}
+    <a href='#' class='ld-toggle'>{{ label }}</a>
+{% endif %}
+
+<div class='ld-list ld-{{ type }}'>
+    {% for number in numbers %}
+        {% if number.seo is not empty %}
+            <div class='ld-location'>
+                <div class='ld-area'>
+                    {{ number.location_label }}
+                    <div class='ld-number {% if number.insights is not empty %}{{ number.insights }}{% endif %}'><a href='tel:{{ number.seo }}'>{% if cookie == number.location_name %}{{ number.ppc }}{% else %}{{ number.seo }}{% endif %}</a></div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

@@ -1,0 +1,9 @@
+{% if buttonColour == 'bg-blue' %} 
+    {% set buttonColour = 'bg-primary text-white hover:bg-grey-light' %}
+{% elseif buttonColour == 'bg-rouge' %} 
+    {% set buttonColour = 'bg-rouge hover:bg-rouge-light text-white' %}
+{% elseif buttonColour == 'bg-bleu' %} 
+    {% set buttonColour = 'bg-bleu text-white hover:bg-bleu-light' %}
+{% endif %}
+
+<a href="{{buttonLink}}" class="btn {{buttonColour}} {{buttonClass}}">{{buttonText}}</a>

@@ -1,0 +1,24 @@
+<span class='ld-phonenumber'>
+    {# If the calltag is set, show the calltag #}
+    {% if calltag %}
+        {{ number.calltag }}
+    {% endif %}
+
+    {# Check to see if insights is set and show a span or show a link #}
+    {% if number.insights is not empty %}
+        <span class="{{ number.insights}}">  
+    {% else %}      
+        <a onClick="" href="tel:{% if cookie == number.location_name %}{{ number.ppc }}{% else %}{{ number.seo }}{% endif %}">
+    {% endif %}    
+
+    {# Check if cookie is set and show ppc if it is else show the seo number #}
+    {% if cookie == number.location_name %}{{ number.ppc }}{% else %}{{ number.seo }}{% endif %}
+
+    {# Check to see if insights is set and show a span or show a link #}
+    {% if number.insights is not empty %}
+        </span>  
+    {% else %}      
+        </a>
+    {% endif %}   
+
+</span>

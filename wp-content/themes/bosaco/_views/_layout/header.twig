@@ -1,0 +1,82 @@
+<header class="pt-10 lg:pt-0">
+
+	<div class="block lg:hidden">
+		<a aria-label="Go to homepage" class="block p-6 bg-secondary lg:inline-block" href="{{site.site_url}}">
+			<img class="mx-auto w-72" src="{{options.site_logo.url}}" alt="{{site.title}} Logo"/>
+		</a>
+	</div>
+
+	<div class="relative hidden lg:flex">
+
+		<div class="absolute block transform -translate-x-1/2 -translate-y-1/2 w-72 top-20 left-1/2">
+			<a aria-label="Go to homepage" class="block p-6 bg-secondary lg:inline-block" href="{{site.site_url}}">
+				<img class="mx-auto w-72" src="{{options.site_logo.url}}" alt="{{site.title}} Logo"/>
+			</a>
+		</div>
+		
+		<div class="flex justify-between w-1/2 h-16 px-6 border-b-4 bg-primary-dark border-primary-light">
+		
+			<nav id="menu-secondary" class=" menu" aria-labelledby="secondary-navigation">
+				<span class="sr-only" id="secondary-navigation">secondary Navigation</span>
+				<ul class="flex flex-wrap w-full menu-secondary">
+					{% for item in secondaryMenu.items %}
+						<li class="{{item.class}}">
+							<a href="{{item.link}}" class="relative block p-4 font-bold hover:text-black text-white focus:text-black {{ item.current ? 'text-red-500' }}">{{item.name}}</a>
+							{% if item.children %}
+								<ul class="sub-menu">
+									{% for child in item.children %}
+										<li class="{{child.class}}">
+											<a href="{{child.link}}" class="block p-4 text-white hover:text-black focus:text-black">{{child.name}}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			
+		</div>
+
+		<div class="flex content-center justify-end w-1/2 h-16 px-4 border-b-4 bg-primary-dark border-primary-light">
+			<span class="flex items-center justify-center p-4 font-bold text-white phone">
+			{{ function('icon', 'phone', 'mr-2') }}
+				<a href="tel:+441156477200" data-ctm-watch-id="3" data-ctm-tracked="1" data-observe="1" data-observer-id="1">0115 647 7200</a>
+			</span>
+
+			<a href="#" class="self-center mr-4 btn btn--white">Quick Contact</a>
+		</div>
+
+	</div>
+
+	<div>
+		
+		<div class="hidden p-4 bg-secondary-light lg:block">
+
+		{# Desktop primary navigation #}
+
+			<nav id="menu-primary" class="container mt-16 menu " aria-labelledby="primary-navigation">
+				<span class="sr-only" id="primary-navigation">Primary Navigation</span>
+				<ul class="flex justify-center w-full gap-2 flex-nowrap menu-primary">
+					{% for item in primaryMenu.items %}
+						<li class="{{item.class}} flex-1 bg-white">
+							<a href="{{item.link}}" class="relative block text-center p-4 hover:text-black focus:text-black {{ item.current ? 'text-red-500' }}">{{item.name}}</a>
+							{% if item.children %}
+								<ul class="sub-menu">
+									{% for child in item.children %}
+										<li class="{{child.class}}">
+											<a href="{{child.link}}" class="block p-4 text-gray-500 hover:text-black focus:text-black">{{child.name}}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+
+		</div>
+		
+	</div>	
+
+</header>

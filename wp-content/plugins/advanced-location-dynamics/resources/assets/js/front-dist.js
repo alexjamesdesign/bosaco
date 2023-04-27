@@ -1,0 +1,2 @@
+"use strict";jQuery(function(t){t(document).ready(function(){t(".ld-dropdown").hide(),t(".ld-toggle").click(function(e){e.preventDefault(),t(this).next().slideToggle()})})});
+//# sourceMappingURL=front-dist.js.map

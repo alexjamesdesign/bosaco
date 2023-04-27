@@ -1,0 +1,20 @@
+{
+	"name": "adtrak/advanced-location-dynamics",
+ 	"keywords": ["wordpress", "plugin", "orm", "eloquent", "sql", "framework"],
+    "homepage": "http://telecoms.adtrakdev.com/ald-docs/",
+
+    "require": {
+        "getbilly/framework" : "0.2.*",
+		"bugsnag/bugsnag": "^3.0",
+		"vlucas/phpdotenv": "^4.1"
+    },
+
+	"autoload": {
+    	"psr-4": {
+			"Adtrak\\AdvancedLocationDynamics\\": "app/"
+		}
+	},
+	"require-dev": {
+		"bamarni/composer-bin-plugin": "^1.4"
+	}
+}

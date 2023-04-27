@@ -1,0 +1,109 @@
+/* ---------------------------------------------------
+Desktop Navs
+--------------------------------------------------- */
+
+@screen lg {
+  .menu-primary {
+    li {
+      @apply relative p-4 pt-16 font-bold border-gray-300 rounded-lg border-1 text-primary;
+      &:focus-within > .sub-menu {
+        @apply block opacity-100;
+      }
+    }
+
+    li.menu-item {      
+      &:after {
+        @apply absolute p-2 -translate-x-1/2 bg-center bg-no-repeat rounded-full top-5 bg-secondary left-1/2 w-11 h-11;
+        content: "";
+        background-size: 30px 30px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    li.menu-item-914 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-paint-brush.svg");
+      }
+    }
+
+    li.menu-item-909 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-house-plus.svg");
+      }
+    }
+
+    li.menu-item-915 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-roof.svg");
+      }
+    }
+
+    li.menu-item-910 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-garage-door.svg");
+      }
+    }
+
+    li.menu-item-913 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-drip.svg");
+      }
+    }
+
+    li.menu-item-911 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-lightning.svg");
+      }
+    }
+
+    li.menu-item-912 {      
+      &:after {
+        background-image: url("/wp-content/themes/bosaco/_assets/images/icon-leaf.svg");
+      }
+    }
+  }
+  
+  .menu-primary,
+  .menu-secondary {
+    li {
+      @apply relative;
+      &:focus-within > .sub-menu {
+        @apply block opacity-100;
+      }
+    }
+
+    a {
+      &:hover {
+        & + .sub-menu {
+          @apply block opacity-100;
+        }
+      }
+    }
+
+    .icon-angle-down {
+      @apply absolute bottom-0 w-4 h-4 transform -translate-x-1/2 opacity-50 left-1/2;
+    }
+
+    .current-menu-item > a,
+    .current-menu-parent > a {
+      @apply text-red-500;
+    }
+  }
+
+  .sub-menu {
+    @apply absolute z-40 hidden transform -translate-x-1/2 bg-white shadow-lg opacity-0 top-full left-1/2;
+
+    &:focus-within {
+      @apply visible block opacity-100;
+    }
+
+    width: 250px;
+
+    &:hover {
+      @apply visible block opacity-100;
+    }
+  }
+}

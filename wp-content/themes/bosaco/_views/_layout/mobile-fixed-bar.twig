@@ -1,0 +1,20 @@
+<div class="fixed z-50 flex flex-wrap w-full bg-primary lg:hidden">
+
+ {#<div class="w-1/2 p-2 text-center bg-gray-500">
+    {% do action('ald_default', false) %}
+</div>#}
+
+<div data-ld-toggle="ld-mobile-top" class="w-1/2 p-2 text-center bg-secondary">
+  {% do action('ald_default', true) %}
+</div>
+
+<div id="ld-mobile-top" class="absolute left-0 z-10 hidden w-full p-4 bg-secondary top-full">
+  {% do action('ald_default', true) %}
+</div>
+
+<button title="Toggle Mobile Menu" class="flex items-center justify-center w-1/2 p-2 text-center bg-primary" data-mobile-menu-toggle>
+  {{ function('icon', 'bars') }}
+  <span class="ml-2">Menu</span>
+</button>
+
+</div>

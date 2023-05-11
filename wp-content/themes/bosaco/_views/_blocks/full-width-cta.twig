@@ -69,13 +69,13 @@
 
     </div>
 
-    <div class="flex flex-wrap w-full text-white lg:w-1/2 bg-primary-light">
+    <div class="relative flex-wrap hidden w-full overflow-hidden text-white lg:flex lg:w-1/2 bg-primary-light">
 
     {% for media_item in fields.full_width_cta %}
 
         {% if media_item.acf_fc_layout == 'image' %}
 
-            <img src="{{ Image((media_item.cta_image)).src|resize(900,250) }}" />
+            <img class="absolute" src="{{ Image((media_item.cta_image)).src|resize(900) }}" />
 
         {% endif %}
 

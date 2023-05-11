@@ -1736,6 +1736,21 @@ h3 {
 .ml-2 {
 	margin-left: 0.5rem;
 }
+.mt-1 {
+	margin-top: 0.25rem;
+}
+.mt-8 {
+	margin-top: 2rem;
+}
+.mt-7 {
+	margin-top: 1.75rem;
+}
+.mb-2 {
+	margin-bottom: 0.5rem;
+}
+.mr-6 {
+	margin-right: 1.5rem;
+}
 .block {
 	display: block;
 }
@@ -1744,6 +1759,9 @@ h3 {
 }
 .flex {
 	display: flex;
+}
+.inline-flex {
+	display: inline-flex;
 }
 .grid {
 	display: grid;
@@ -1760,8 +1778,26 @@ h3 {
 .h-16 {
 	height: 4rem;
 }
+.h-full {
+	height: 100%;
+}
+.h-3 {
+	height: 0.75rem;
+}
+.h-2 {
+	height: 0.5rem;
+}
+.h-4 {
+	height: 1rem;
+}
 .max-h-16 {
 	max-height: 4rem;
+}
+.max-h-80 {
+	max-height: 20rem;
+}
+.max-h-64 {
+	max-height: 16rem;
 }
 .w-full {
 	width: 100%;
@@ -1774,6 +1810,15 @@ h3 {
 }
 .w-1\/2 {
 	width: 50%;
+}
+.w-3 {
+	width: 0.75rem;
+}
+.w-2 {
+	width: 0.5rem;
+}
+.w-4 {
+	width: 1rem;
 }
 .max-w-md {
 	max-width: 28rem;
@@ -1808,6 +1853,16 @@ h3 {
 }
 .transform {
 	transform: var(--tw-transform);
+}
+@keyframes ping {
+
+	75%, 100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+.animate-ping {
+	animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 .resize {
 	resize: both;
@@ -1853,11 +1908,17 @@ h3 {
 .self-center {
 	align-self: center;
 }
+.overflow-hidden {
+	overflow: hidden;
+}
 .rounded-lg {
 	border-radius: 0.5rem;
 }
 .rounded-xl {
 	border-radius: 0.75rem;
+}
+.rounded-full {
+	border-radius: 9999px;
 }
 .border {
 	border-width: 1px;
@@ -1904,6 +1965,18 @@ h3 {
 .bg-secondary {
 	--tw-bg-opacity: 1;
 	background-color: rgba(219, 227, 236, var(--tw-bg-opacity));
+}
+.bg-blue-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+.bg-green-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+.bg-green-600 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
 }
 .bg-none {
 	background-image: none;
@@ -1981,6 +2054,10 @@ h3 {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
 .font-bold {
 	font-weight: 700;
 }
@@ -2013,6 +2090,10 @@ h3 {
 	--tw-text-opacity: 1;
 	color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
+.text-primary-light {
+	--tw-text-opacity: 1;
+	color: rgba(164, 195, 228, var(--tw-text-opacity));
+}
 .no-underline {
 	text-decoration: none;
 }
@@ -2021,6 +2102,9 @@ h3 {
 }
 .opacity-0 {
 	opacity: 0;
+}
+.opacity-75 {
+	opacity: 0.75;
 }
 .transition-all {
 	transition-property: all;

@@ -29,9 +29,9 @@
       {% if media_item.acf_fc_layout == 'usp' %}
 
         {% if media_item.usps %}
-        <div class="flex justify-center w-full">
+        <div class="flex justify-center w-full mb-4">
           {% for item in media_item.usps %}
-            <p class="px-3 usp">{{ function('icon', 'check', 'mr-2') }} {{ item.usp }}</p>
+            <p class="px-3 text-lg font-bold text-primary">{{ function('icon', 'tick-round', 'mr-1 text-xl') }} {{ item.usp }}</p>
           {% endfor %}
           </div> 
         {% endif %}

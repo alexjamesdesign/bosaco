@@ -23,12 +23,12 @@
 {% endif %}
 
 {% if fields.column_count == 'one' %}
-    {% set columnOptions = 'lg:flex-wrap' %}
+    {% set columnOptions = 'lg:flex lg:flex-wrap' %}
 {% elseif fields.column_count == 'two' %}
-    {% set columnOptions = 'lg:flex-nowrap' %}
+    {% set columnOptions = 'lg:flex lg:flex-nowrap' %}
 {% endif %}
 
-<div class="relative flex justify-center p-8 {{columnOptions}} {{ marginOptions }} {{ fields.background_colour }}">
+<div class="relative justify-center p-8 {{columnOptions}} {{ marginOptions }} {{ fields.background_colour }}">
 
     {% for media_item in fields.content_block %}
       
@@ -46,10 +46,10 @@
             {% endif %}
 
             {% if media_item.acf_fc_layout == 'list' %}
-                <ul class="flex justify-center w-full">
+                <ul class="flex flex-wrap justify-center w-full lg:flex-nowrap mt-7">
                     {% for item in media_item.listitems %}
                         <pre>{{ dump(item.pagelink.link) }}</pre>
-                        <li class="mr-4 font-bold text-primary">{% if item.pagelink.link %}<a href="{{ item.pagelink.link }}">{% endif %}{{ function('icon', 'check', 'mr-1') }} {{ item.text }}{% if item.pagelink.link %}</a>{% endif %}</li>
+                        <li class="mb-4 mr-6 text-lg font-bold text-primary">{% if item.pagelink.link %}<a href="{{ item.pagelink.link }}">{% endif %}{{ function('icon', 'tick-round', 'mr-1 text-xl') }} {{ item.text }}{% if item.pagelink.link %}</a>{% endif %}</li>
                     {% endfor %}
                 </ul> 
             {% endif %}

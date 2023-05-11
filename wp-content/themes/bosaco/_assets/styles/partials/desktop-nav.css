@@ -5,13 +5,17 @@ Desktop Navs
 @screen lg {
   .menu-primary {
     li {
-      @apply relative p-4 pt-16 font-bold border-gray-300 rounded-lg border-1 text-primary;
+      /* @apply relative p-4 pt-16 font-bold border-gray-300 rounded-lg border-1 text-primary; */
       &:focus-within > .sub-menu {
         @apply block opacity-100;
       }
+
+      a {
+        @apply relative p-4 pt-16 font-bold bg-white border-gray-300 rounded-lg border-1 text-primary;
+      }
     }
 
-    li.menu-item {      
+    li.menu-item a {      
       &:after {
         @apply absolute p-2 -translate-x-1/2 bg-center bg-no-repeat rounded-full top-5 bg-secondary left-1/2 w-11 h-11;
         content: "";
@@ -23,43 +27,43 @@ Desktop Navs
       }
     }
 
-    li.menu-item-914 {      
+    li.menu-item-914 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-paint-brush.svg");
       }
     }
 
-    li.menu-item-909 {      
+    li.menu-item-909 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-house-plus.svg");
       }
     }
 
-    li.menu-item-915 {      
+    li.menu-item-915 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-roof.svg");
       }
     }
 
-    li.menu-item-910 {      
+    li.menu-item-910 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-garage-door.svg");
       }
     }
 
-    li.menu-item-913 {      
+    li.menu-item-913 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-drip.svg");
       }
     }
 
-    li.menu-item-911 {      
+    li.menu-item-911 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-lightning.svg");
       }
     }
 
-    li.menu-item-912 {      
+    li.menu-item-912 a {      
       &:after {
         background-image: url("/wp-content/themes/bosaco/_assets/images/icon-leaf.svg");
       }
@@ -72,6 +76,24 @@ Desktop Navs
       @apply relative;
       &:focus-within > .sub-menu {
         @apply block opacity-100;
+      }
+    }
+
+    ul.sub-menu {
+      @apply pt-2 rounded-md;
+      
+      span {
+        @apply border-gray-300 rounded-lg border-1;
+      }
+
+      li {
+        a {
+          @apply p-2 border-none rounded-none bg-none;
+          
+          &:after {
+            content: none;
+          }
+        }
       }
     }
 
@@ -94,7 +116,11 @@ Desktop Navs
   }
 
   .sub-menu {
-    @apply absolute z-40 hidden transform -translate-x-1/2 bg-white shadow-lg opacity-0 top-full left-1/2;
+    @apply absolute z-40 hidden transform -translate-x-1/2 opacity-0 left-1/2;
+
+    span {
+      @apply bg-white rounded-lg shadow-lg;
+    }
 
     &:focus-within {
       @apply visible block opacity-100;

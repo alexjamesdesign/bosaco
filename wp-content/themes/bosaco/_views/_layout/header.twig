@@ -59,15 +59,17 @@
 				<span class="sr-only" id="primary-navigation">Primary Navigation</span>
 				<ul class="flex justify-center w-full gap-2 flex-nowrap menu-primary">
 					{% for item in primaryMenu.items %}
-						<li class="{{item.class}} flex-1 bg-white">
+						<li class="{{item.class}} flex-1">
 							<a href="{{item.link}}" class="relative block text-center p-4 hover:text-black focus:text-black {{ item.current ? 'text-red-500' }}">{{item.name}}</a>
 							{% if item.children %}
 								<ul class="sub-menu">
+									<span>
 									{% for child in item.children %}
 										<li class="{{child.class}}">
-											<a href="{{child.link}}" class="block p-4 text-gray-500 hover:text-black focus:text-black">{{child.name}}</a>
+											<a href="{{child.link}}" class="block p-4 text-center text-gray-500 bg-none hover:text-black focus:text-black">{{child.name}}</a>
 										</li>
 									{% endfor %}
+									</span>
 								</ul>
 							{% endif %}
 						</li>

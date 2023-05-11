@@ -10,7 +10,19 @@
   SupportsMultiple: true
 #}
 
-<div class="relative flex flex-wrap px-8 mb-16 -mt-16 lg:flex-nowrap bg-secondary-light">
+{% if fields.margin_options =='nmb' %}
+    {% set marginOptions = 'translate-y-20 -mt-20' %}
+{% elseif fields.margin_options =='nmt' %}
+    {% set marginOptions = '-translate-y-20 -mb-20' %}
+{% elseif fields.margin_options =='def' %}
+    {% set marginOptions = ' ' %}
+{% elseif fields.margin_options =='ept' %}
+    {% set marginOptions = 'pt-32' %}
+{% elseif fields.margin_options =='epb' %}
+    {% set marginOptions = 'pb-32' %}
+{% endif %}
+
+<div class="container relative flex flex-wrap px-8 lg:flex-nowrap z-10 {{ marginOptions }}">
 
     <div class="flex flex-wrap w-full p-8 text-white lg:w-1/2 bg-primary-dark">
 
@@ -57,13 +69,13 @@
 
     </div>
 
-    <div class="flex flex-wrap w-full p-8 text-white lg:w-1/2 bg-primary-light">
+    <div class="flex flex-wrap w-full text-white lg:w-1/2 bg-primary-light">
 
     {% for media_item in fields.full_width_cta %}
 
         {% if media_item.acf_fc_layout == 'image' %}
 
-            <img src="{{ Image(post.meta('image')).src }}" />
+            <img src="{{ Image((media_item.cta_image)).src|resize(900,250) }}" />
 
         {% endif %}
 

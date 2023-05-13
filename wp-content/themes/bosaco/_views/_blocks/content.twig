@@ -10,6 +10,7 @@
   SupportsMultiple: true
 #}
 
+
 {% if fields.margin_options =='nmb' %}
     {% set marginOptions = 'translate-y-20 -mt-20' %}
 {% elseif fields.margin_options =='nmt' %}
@@ -32,29 +33,28 @@
 
     {% for media_item in fields.content_block %}
       
-        {% if media_item.acf_fc_layout == 'image' %}
-            {% if media_item.acf_fc_layout == 'content' %}
-                <div class="w-full copy lg:w-1/2 lg:mr-12 max-w-[1000px]">
-                    {{ media_item.content }}
-                </div>
-            {% endif %}
-        {% else %}
-            {% if media_item.acf_fc_layout == 'content' %}
-                <div class="w-full copy max-w-[1000px]">
-                    {{ media_item.content }}
-                </div>
-            {% endif %}
+        {% if media_item.acf_fc_layout == 'content' %}
+            <div class="w-full copy max-w-[1000px]">
+                
+                {{ media_item.content }}
 
-            {% if media_item.acf_fc_layout == 'list' %}
-                <ul class="flex flex-wrap justify-center w-full lg:flex-nowrap mt-7">
-                    {% for item in media_item.listitems %}
-                        <pre>{{ dump(item.pagelink.link) }}</pre>
-                        <li class="mb-4 mr-6 text-lg font-bold text-primary">{% if item.pagelink.link %}<a href="{{ item.pagelink.link }}">{% endif %}{{ function('icon', 'tick-round', 'mr-1 text-xl') }} {{ item.text }}{% if item.pagelink.link %}</a>{% endif %}</li>
-                    {% endfor %}
-                </ul> 
-            {% endif %}
-            
-        {% endif %} 
+                {% if media_item.include_a_phone_number == true %}
+                    <div class="w-full mt-6 mb-6">
+                        <p class="font-bold text-primary-dark">Professional Nottingham Builders &amp; Tradesmen</p>
+                        <a href="tel:+441156477200" data-ctm-watch-id="3" data-ctm-tracked="1" data-observe="1" data-observer-id="1" class="text-xl font-bold text-primary-dark">0115 647 7200</a>
+                    </div>
+                {% endif %}
+                
+            </div>
+        {% endif %}
+
+        {% if media_item.acf_fc_layout == 'list' %}
+            <ul class="flex flex-wrap justify-center w-full mt-7 max-w-[1200px]">
+                {% for item in media_item.listitems %}
+                    <li class="flex flex-wrap w-full mb-4 text-lg font-bold md:w-auto md:mr-8 text-primary">{% if Post(item.pagelink).link %}<a href="{{ Post(item.pagelink).link }}" class="flex hover:text-primary-mid">{% endif %}{{ function('icon', 'tick-round', 'mr-2 flex-auto text-2xl') }}{{ item.text }}{% if Post(item.pagelink).link %}</a>{% endif %}</li>
+                {% endfor %}
+            </ul> 
+        {% endif %}
 
         {% if media_item.acf_fc_layout == 'image' %}
             <div class="w-full copy lg:w-1/2 max-w-[1000px] lg:ml-8">

@@ -24,7 +24,7 @@ Address - Stacked
 ======================================================================================================================== */
 function address_stacked() {
 	// loop through the rows of data
-	while ( have_rows('site_address', 'options') ) : the_row();
+	while ( have_rows('address', 'options') ) : the_row();
 	// display a sub field value
 	the_sub_field('address_line', 'options');
 	echo "<br/>";

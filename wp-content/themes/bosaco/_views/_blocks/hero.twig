@@ -18,7 +18,7 @@
 
 <div class="relative flex w-full bg-secondary-light {{ marginOptions }}">
 
-	<div class="flex flex-wrap justify-center w-full px-8 py-12 text-center bg-secondary-light">
+	<div class="flex flex-wrap justify-center w-full px-4 py-12 text-center md:px-8 bg-secondary-light">
     
     {% for media_item in fields.hero_content %}
       
@@ -29,9 +29,9 @@
       {% if media_item.acf_fc_layout == 'usp' %}
 
         {% if media_item.usps %}
-        <div class="flex justify-center w-full mb-4">
+        <div class="justify-center w-full mb-4 md:flex">
           {% for item in media_item.usps %}
-            <p class="px-3 text-lg font-bold text-primary">{{ function('icon', 'tick-round', 'mr-1 text-xl') }} {{ item.usp }}</p>
+            <p class="w-full px-3 py-2 text-lg font-bold text-primary md:w-1/3">{{ function('icon', 'tick-round', 'mr-1 text-xl') }} {{ item.usp }}</p>
           {% endfor %}
           </div> 
         {% endif %}
@@ -46,7 +46,7 @@
                 buttonText : item.text,
                 buttonColour : item.colour,
                 buttonLink : item.link.link,
-                buttonClass : "px-6 py-2 mt-2 font-bold md:mb-0 hover:bg-primary-mid"
+                buttonClass : "px-6 py-2 mt-2 font-bold md:mb-0"
               } %}
 
             {% endfor %}

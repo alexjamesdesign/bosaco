@@ -1,67 +1,5 @@
 {# 
-
---- Usage (for a lazyloaded image)
-
-{% include "_components/picture.twig" with {
-  source: post.thumbnail.src,
-  lazyload: true,
-  breakpoints: {
-    "768px" : {
-      w: 1024,
-      h: 500,
-      crop: 'center'
-    },
-    "640px" : {
-      w: 768,
-      h: 400,
-      crop: 'center'
-    },
-    "1px" : {
-      w: 640,
-      h: 640,
-      crop: 'center'
-    },
-  },
-  img: {
-    classes: 'lazyload',
-    w: 640,
-    h: 640,
-    crop: 'center',
-  }
-}
-%}
-
---- Usage (for a non-lazyloaded image)
-
-{% include "_components/picture.twig" with {
-  source: post.thumbnail.src,
-  lazyload: false,
-  breakpoints: {
-    "768px" : {
-      w: 1024,
-      h: 500,
-      crop: 'center'
-    },
-    "640px" : {
-      w: 768,
-      h: 400,
-      crop: 'center'
-    },
-    "1px" : {
-      w: 640,
-      h: 640,
-      crop: 'center'
-    },
-  },
-  img: {
-    classes: '',
-    w: 640,
-    h: 640,
-    crop: 'center',
-  }
-}
-%}
-
+Custom picture, useful for any image. See bottom of this file for a full example.
  #}
 
 <picture class="w-full {{ pictureClasses }}">
@@ -189,3 +127,100 @@
   >
 </picture>
 
+{# 
+
+--- Usage (for a lazyloaded image)
+
+{% include "_components/picture.twig" with {
+  source: post.thumbnail.src,
+  lazyload: true,
+  breakpoints: {
+    "1530px" : {
+      w: 1800,
+      h: 500,
+      crop: 'center'
+    },
+    "1280px" : {
+      w: 1530,
+      h: 500,
+      crop: 'center'
+    },
+    "1024px" : {
+      w: 1280,
+      h: 500,
+      crop: 'center'
+    },
+    "768px" : {
+      w: 1024,
+      h: 500,
+      crop: 'center'
+    },
+    "640px" : {
+      w: 768,
+      h: 400,
+      crop: 'center'
+    },
+    "1px" : {
+      w: 640,
+      h: 640,
+      crop: 'center'
+    },
+  },
+  img: {
+    classes: 'lazyload',
+    w: 640,
+    h: 640,
+    crop: 'center',
+  }
+}
+%}
+
+
+
+--- Usage (for a non-lazyloaded image)
+
+{% include "_components/picture.twig" with {
+  source: post.thumbnail.src,
+  lazyload: false,
+  breakpoints: {
+    "1530px" : {
+      w: 1800,
+      h: 500,
+      crop: 'center'
+    },
+    "1280px" : {
+      w: 1530,
+      h: 500,
+      crop: 'center'
+    },
+    "1024px" : {
+      w: 1280,
+      h: 500,
+      crop: 'center'
+    },
+    "768px" : {
+      w: 1024,
+      h: 500,
+      crop: 'center'
+    },
+    "640px" : {
+      w: 768,
+      h: 400,
+      crop: 'center'
+    },
+    "1px" : {
+      w: 640,
+      h: 640,
+      crop: 'center'
+    },
+  },
+  img: {
+    classes: '',
+    w: 640,
+    h: 640,
+    crop: 'center',
+  }
+}
+%}
+
+ #}

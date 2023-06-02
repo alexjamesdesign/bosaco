@@ -15,17 +15,17 @@ $linkText: theme("colors.gray.800");
 $linkBg: transparent;
 $linkBorder: theme("colors.gray.200");
 
-$linkTextActive: theme("colors.white");
-$linkBgActive: theme("colors.gray.600");
+$linkTextActive: theme("colors.primary.dark");
+$linkBgActive: theme("colors.primary.light");
 
-$linkTextOn: theme("colors.gray.300");
-$linkBgOn: theme("colors.gray.800");
+$linkTextOn: theme("colors.white");
+$linkBgOn: theme("colors.primary.dark");
 
 $dropdownArrowBg: transparent;
 $dropdownArrowText: inherit;
 
 $closeText: theme("colors.white");
-$closeTextBg: theme("colors.red.800");
+$closeTextBg: theme("colors.primary.dark");
 
 .mob-nav {
   @apply fixed top-0 bottom-0 right-0 w-4/5 h-full duration-300;

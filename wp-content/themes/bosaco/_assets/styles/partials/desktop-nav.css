@@ -82,9 +82,9 @@ Desktop Navs
     ul.sub-menu {
       @apply pt-2 rounded-md;
       
-      span {
-        @apply border-gray-300 rounded-lg border-1;
-      }
+      /* span {
+        @apply rounded-lg border-primary border-t-1;
+      } */
 
       li {
         a {
@@ -108,10 +108,16 @@ Desktop Navs
     .icon-angle-down {
       @apply absolute bottom-0 w-4 h-4 transform -translate-x-1/2 opacity-50 left-1/2;
     }
+  }
 
+  .menu-primary {
     .current-menu-item > a,
     .current-menu-parent > a {
-      @apply text-red-500;
+      @apply bg-primary-lightest;
+
+      &:after {
+        @apply !bg-white border-1 border-primary-light;
+      }
     }
   }
 

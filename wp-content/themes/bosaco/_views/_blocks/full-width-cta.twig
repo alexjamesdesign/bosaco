@@ -22,7 +22,7 @@
     {% set marginOptions = 'pb-32' %}
 {% endif %}
 
-<div class="container relative flex flex-wrap px-8 lg:flex-nowrap z-10 {{ marginOptions }}">
+<div class="container relative flex flex-col-reverse md:flex-row flex-wrap px-4 md:px-8 md:flex-nowrap z-10 {{ marginOptions }}">
 
     <div class="flex flex-wrap w-full p-8 text-white lg:w-1/2 bg-primary-dark">
 
@@ -59,6 +59,11 @@
 
                 {% if 'number' in media_item.actions %}
 
+                    <span class="relative flex w-3 h-3 mt-2 mr-2">
+                        <span class="absolute inline-flex w-full h-full bg-green-600 rounded-full opacity-85 animate-ping"></span>
+                        <span class="relative inline-flex w-3 h-3 bg-green-500 rounded-full"></span>
+                    </span>
+
                     <p class="phone">Call us <span class="text-lg font-bold">0115 647 7200</span></p>
 
                 {% endif %}
@@ -69,13 +74,41 @@
 
     </div>
 
-    <div class="relative flex-wrap hidden w-full overflow-hidden text-white lg:flex lg:w-1/2 bg-primary-light">
+    <div class="relative flex flex-wrap w-full overflow-hidden text-white h-28 md:h-auto md:w-1/2 bg-primary-light">
 
     {% for media_item in fields.full_width_cta %}
 
         {% if media_item.acf_fc_layout == 'image' %}
 
-            <img class="absolute" src="{{ Image((media_item.cta_image)).src|resize(900) }}" />
+            {# <img class="absolute" src="{{ Image((media_item.cta_image)).src|resize(900, 900) }}" /> #}
+
+            {# <pre>{{ dump(media_item.cta_image) }}</pre> #}
+
+            {% include "_views/_components/picture.twig" with {
+                source: media_item.cta_image.url,
+                pictureClasses: "absolute",
+                breakpoints: {
+                    "1024px" : {
+                        classes: 'w-full object-contain',
+                        w: 600,
+                        h: 300,
+                        crop: 'center'
+                    },
+                    "768px" : {
+                        classes: 'w-full object-contain',
+                        w: 300,
+                        h: 400,
+                        crop: 'center'
+                    },
+                },
+                img: {
+                    classes: 'w-full',
+                    alt: media_item.cta_image.alt,
+                    w: 500,
+                    h: 250,
+                    crop: 'center',
+                }
+            } %}
 
         {% endif %}
 

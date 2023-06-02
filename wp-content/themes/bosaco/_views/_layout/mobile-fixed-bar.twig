@@ -4,17 +4,17 @@
     {% do action('ald_default', false) %}
 </div>#}
 
-<div data-ld-toggle="ld-mobile-top" class="w-1/2 p-2 text-center bg-secondary">
+<div data-ld-toggle="ld-mobile-top" class="w-1/2 p-2 text-center bg-primary">
+  <a href="tel:+441156477200" data-ctm-watch-id="3" data-ctm-tracked="1" data-observe="1" data-observer-id="1" class="font-bold text-white">0115 647 7200</a>
+</div>
+
+<div id="ld-mobile-top" class="absolute left-0 z-10 hidden w-full p-4 top-full bg-primary"> 
   {% do action('ald_default', true) %}
 </div>
 
-<div id="ld-mobile-top" class="absolute left-0 z-10 hidden w-full p-4 bg-secondary top-full">
-  {% do action('ald_default', true) %}
-</div>
-
-<button title="Toggle Mobile Menu" class="flex items-center justify-center w-1/2 p-2 text-center bg-primary" data-mobile-menu-toggle>
+<button title="Toggle Mobile Menu" class="flex items-center justify-center w-1/2 p-2 text-center bg-secondary" data-mobile-menu-toggle>
   {{ function('icon', 'bars') }}
-  <span class="ml-2">Menu</span>
+  <span class="ml-2 font-bold">Menu</span>
 </button>
 
 </div>

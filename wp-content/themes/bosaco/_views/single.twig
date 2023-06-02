@@ -2,10 +2,20 @@
 
 {% block content %}
 
-	<div class="grid grid-cols-1 gap-8">
+<div class="grid grid-cols-1 gap-8">
 
-		{{post.content}}
+	<div class="relative justify-center px-4 my-8 bg-white lg:flex lg:flex-wrap">
+
+        <div class="w-full copy max-w-[1000px]">
+
+			<h1>{{post.title}}</h1>
+
+			{{post.content}}
+
+		</div>
 
 	</div>
+
+</div>
 
 {% endblock %}

@@ -27,7 +27,7 @@ h2, .h2 {
   @apply mb-6 text-3xl;
 }
 
-h3 {
+h3, .h3 {
   @apply text-xl;
 }
 

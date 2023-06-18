@@ -71,7 +71,7 @@
             {% endif %}
 
             {% if media_item.acf_fc_layout == 'list' %}
-                <ul class="flex flex-wrap justify-center w-full mt-7 max-w-[1200px]">
+                <ul class="flex flex-wrap justify-center w-full my-7 max-w-[1200px]">
                     {% for item in media_item.listitems %}
                         <li class="flex flex-wrap w-full mb-4 text-lg font-bold md:w-auto md:mr-8 text-primary">{% if Post(item.pagelink).link %}<a href="{{ Post(item.pagelink).link }}" class="flex hover:text-primary-mid">{% endif %}{{ function('icon', 'tick-round', 'mr-2 flex-auto text-2xl') }}{{ item.text }}{% if Post(item.pagelink).link %}</a>{% endif %}</li>
                     {% endfor %}

@@ -569,6 +569,16 @@ video {
 	--tw-ring-offset-shadow: 0 0 #0000;
 	--tw-ring-shadow: 0 0 #0000;
 	--tw-shadow: 0 0 #0000;
+	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
+	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+	--tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+	--tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+	--tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-invert: var(--tw-empty,/*!*/ /*!*/);
+	--tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+	--tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+	--tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 
@@ -1277,22 +1287,55 @@ Desktop Navs
   Custom overrides below
 --------------------------------------------------- */
 form {
+	width: 100%;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
 form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"], form input[type="url"], form input[type="date"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="time"], form input[type="search"], form input[type="tel"], form input[type="checkbox"], form input[type="radio"], form select, form select[multiple], form textarea {
-	border-radius: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"], form input[type="url"], form input[type="date"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="time"], form input[type="search"], form input[type="tel"], form input[type="checkbox"], form input[type="radio"], form select, form select[multiple], form textarea {
+	width: 100%;
 }
 form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"], form input[type="url"], form input[type="date"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="time"], form input[type="search"], form input[type="tel"], form input[type="checkbox"], form input[type="radio"], form select, form select[multiple], form textarea {
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"], form input[type="url"], form input[type="date"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="time"], form input[type="search"], form input[type="tel"], form input[type="checkbox"], form input[type="radio"], form select, form select[multiple], form textarea {
+	--tw-text-opacity: 1;
+	color: rgba(30, 43, 56, var(--tw-text-opacity));
+}
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"], form input[type="url"], form input[type="date"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="time"], form input[type="search"], form input[type="tel"], form input[type="checkbox"], form input[type="radio"], form select, form select[multiple], form textarea {
 	--tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+form label {
+	width: 100%;
+}
+form .hf-fields-wrap {
+	display: flex;
+}
+form .hf-fields-wrap {
+	flex-wrap: wrap;
+}
 form textarea {
 	height: 8rem;
+}
+form textarea {
+	width: 100%;
+}
+form .submit {
+	--tw-text-opacity: 1;
+	color: rgba(23, 68, 118, var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+	form p:nth-of-type(even) {
+		padding-left: 0.5rem;
+	}
+}
+form p:last-of-type {
+	padding-left: 0px;
 }
 /* ---------------------------------------------------
 Mobile Nav
@@ -1705,6 +1748,10 @@ h3, .h3 {
 	margin-left: auto;
 	margin-right: auto;
 }
+.my-7 {
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+}
 .mb-10 {
 	margin-bottom: 2.5rem;
 }
@@ -1719,6 +1766,9 @@ h3, .h3 {
 }
 .mb-4 {
 	margin-bottom: 1rem;
+}
+.mb-16 {
+	margin-bottom: 4rem;
 }
 .-mt-20 {
 	margin-top: -5rem;
@@ -1735,9 +1785,6 @@ h3, .h3 {
 .mr-2 {
 	margin-right: 0.5rem;
 }
-.mt-7 {
-	margin-top: 1.75rem;
-}
 .mr-1 {
 	margin-right: 0.25rem;
 }
@@ -1749,6 +1796,9 @@ h3, .h3 {
 }
 .ml-2 {
 	margin-left: 0.5rem;
+}
+.mb-2 {
+	margin-bottom: 0.5rem;
 }
 .block {
 	display: block;
@@ -1771,11 +1821,11 @@ h3, .h3 {
 .h-full {
 	height: 100%;
 }
-.h-3 {
-	height: 0.75rem;
-}
 .h-28 {
 	height: 7rem;
+}
+.h-3 {
+	height: 0.75rem;
 }
 .h-auto {
 	height: auto;
@@ -1788,6 +1838,9 @@ h3, .h3 {
 }
 .max-h-16 {
 	max-height: 4rem;
+}
+.min-h-48 {
+	min-height: 12rem;
 }
 .w-full {
 	width: 100%;
@@ -1839,6 +1892,10 @@ h3, .h3 {
 }
 .-translate-x-1\/2 {
 	--tw-translate-x: -50%;
+	transform: var(--tw-transform);
+}
+.translate-y-1\/2 {
+	--tw-translate-y: 50%;
 	transform: var(--tw-transform);
 }
 .transform {
@@ -1916,14 +1973,18 @@ h3, .h3 {
 .border {
 	border-width: 1px;
 }
+.border-b-4 {
+	border-bottom-width: 4px;
+}
 .border-t-4 {
 	border-top-width: 4px;
 }
 .border-t-1 {
 	border-top-width: 1px;
 }
-.border-b-4 {
-	border-bottom-width: 4px;
+.border-primary {
+	--tw-border-opacity: 1;
+	border-color: rgba(23, 68, 118, var(--tw-border-opacity));
 }
 .border-primary-dark {
 	--tw-border-opacity: 1;
@@ -1949,6 +2010,10 @@ h3, .h3 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
+.bg-primary-light {
+	--tw-bg-opacity: 1;
+	background-color: rgba(164, 195, 228, var(--tw-bg-opacity));
+}
 .bg-green-600 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
@@ -1956,10 +2021,6 @@ h3, .h3 {
 .bg-green-500 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
-}
-.bg-primary-light {
-	--tw-bg-opacity: 1;
-	background-color: rgba(164, 195, 228, var(--tw-bg-opacity));
 }
 .bg-secondary-light {
 	--tw-bg-opacity: 1;
@@ -2011,6 +2072,10 @@ h3, .h3 {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+.py-8 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
 .px-6 {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -2026,10 +2091,6 @@ h3, .h3 {
 .px-3 {
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
-}
-.py-8 {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
 }
 .py-4 {
 	padding-top: 1rem;
@@ -2070,6 +2131,9 @@ h3, .h3 {
 }
 .text-center {
 	text-align: center;
+}
+.align-middle {
+	vertical-align: middle;
 }
 .text-sm {
 	font-size: 0.875rem;
@@ -2138,6 +2202,9 @@ h3, .h3 {
 }
 .opacity-0 {
 	opacity: 0;
+}
+.filter {
+	filter: var(--tw-filter);
 }
 .transition-all {
 	transition-property: all;

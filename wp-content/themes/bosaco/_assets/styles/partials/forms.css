@@ -5,7 +5,7 @@
 --------------------------------------------------- */
 
 form {
-  @apply py-6;
+  @apply w-full py-6;
 
   input[type="text"],
   input[type="password"],
@@ -24,10 +24,34 @@ form {
   select,
   select[multiple],
   textarea {
-    @apply border-gray-300 rounded shadow-sm;
+    @apply w-full mb-2 border-gray-300 shadow-sm text-secondary-dark;
+  }
+
+  label {
+    @apply w-full;
+  }
+
+  .hf-fields-wrap {
+    @apply flex flex-wrap;
   }
 
   textarea {
-    @apply h-32;
+    @apply w-full h-32;
   }
+
+  .submit {
+    @apply text-primary;
+  }
+
+  p {
+    &:nth-of-type(even) {
+      @apply lg:pl-2
+    }
+
+    &:last-of-type {
+      @apply pl-0;
+    }
+  }
+  
+
 }

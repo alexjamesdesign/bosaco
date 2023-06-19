@@ -54,7 +54,8 @@
         'posts_per_page' => -1,
       );
       $context['allPages'] = new Timber\PostQuery( $allPages );
-      
+      $context['featured_image'] = get_the_post_thumbnail_url();
+
       return $context;
     }
 

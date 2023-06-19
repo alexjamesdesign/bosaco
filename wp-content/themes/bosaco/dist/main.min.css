@@ -2036,20 +2036,11 @@ h3, .h3 {
 .bg-none {
 	background-image: none;
 }
-.bg-cover {
-	background-size: cover;
-}
 .\!bg-cover {
 	background-size: cover !important;
 }
-.bg-no-repeat {
-	background-repeat: no-repeat;
-}
 .\!bg-no-repeat {
 	background-repeat: no-repeat !important;
-}
-.object-contain {
-	object-fit: contain;
 }
 .p-4 {
 	padding: 1rem;

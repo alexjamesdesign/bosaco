@@ -20,9 +20,9 @@
 
     </div>
 
-    <div class="relative w-full overflow-hidden md:h-auto md:w-1/2 bg-primary-light">
+    <div class="flex flex-wrap w-full overflow-hidden md:h-auto md:w-1/2 bg-primary-light">
 
-        <div class="w-full p-8 text-primary-dark lg:w-1/2">
+        <div class="w-full p-8 text-primary-dark">
 
             <p class="mb-4 font-bold">{{ function('address_stacked') }}</p>
 
@@ -32,7 +32,7 @@
         
         </div>
 
-        <div class="flex h-full !bg-no-repeat !bg-cover" style="background:url('{{ featured_image.src |resize('8000', '500', 'center') }}')"></div>
+        <div class="flex w-full h-auto min-h-48 !bg-no-repeat !bg-cover" style="background:url('{{ featured_image|resize('540', '260', 'center') }}')"></div>
 
     </div>
      

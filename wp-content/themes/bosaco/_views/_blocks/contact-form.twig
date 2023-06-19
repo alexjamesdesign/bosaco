@@ -32,39 +32,7 @@
         
         </div>
 
-        <div class="flex min-h-48">
-            {% include "_views/_components/picture.twig" with {
-                source : (theme.link~"/_assets/images/hero-fallback.jpg"),
-                pictureClasses: "absolute",
-                breakpoints: {
-                    "1024px" : {
-                        classes: 'w-full object-contain',
-                        w: 600,
-                        h: 250,
-                        crop: 'center'
-                    },
-                    "768px" : {
-                        classes: 'w-full object-contain',
-                        w: 300,
-                        h: 500,
-                        crop: 'center'
-                    },
-                    "600px" : {
-                        classes: 'w-full object-contain',
-                        w: 600,
-                        h: 350,
-                        crop: 'center'
-                    },
-                },
-                img: {
-                    classes: 'w-full',
-                    alt: media_item.cta_image.alt,
-                    w: 500,
-                    h: 350,
-                    crop: 'center',
-                }
-            } %}
-        </div>
+        <div class="flex h-full !bg-no-repeat !bg-cover" style="background:url('{{ featured_image.src |resize('8000', '500', 'center') }}')"></div>
 
     </div>
      

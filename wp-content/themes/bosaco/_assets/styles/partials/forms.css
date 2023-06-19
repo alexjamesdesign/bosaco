@@ -4,6 +4,8 @@
   Custom overrides below
 --------------------------------------------------- */
 
+/*! purgecss start ignore */
+
 form {
   @apply w-full py-6;
 
@@ -55,3 +57,5 @@ form {
   
 
 }
+
+/*! purgecss end ignore */ 

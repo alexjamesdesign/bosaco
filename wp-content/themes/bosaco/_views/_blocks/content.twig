@@ -12,13 +12,17 @@
 
 
 {% if fields.margin_options =='nmb' %}
-    {% set marginOptions = 'translate-y-20 -mt-20' %}
+    {% set marginOptions = 'translate-y-24 -mt-24' %}
 {% elseif fields.margin_options =='nmt' %}
-    {% set marginOptions = '-translate-y-20 -mb-20' %}
+    {% set marginOptions = '-translate-y-24 -mb-24' %}
 {% elseif fields.margin_options =='def' %}
-    {% set marginOptions = 'py-8 ' %}
+    {% if fields.background_colour == 'bg-secondary' %}
+        {% set marginOptions = 'py-14' %}
+    {% else %}
+        {% set marginOptions = 'py-8' %}
+    {% endif %}
 {% elseif fields.margin_options =='ept' %}
-    {% set marginOptions = 'pt-20 lg:pt-32' %}
+    {% set marginOptions = 'pt-20 lg:pt-32 lg:pb-12' %}
 {% elseif fields.margin_options =='epb' %}
     {% set marginOptions = 'pb-32' %}
 {% endif %}
@@ -29,9 +33,10 @@
     {% set columnOptions = 'lg:flex lg:flex-nowrap px-4 md:px-8 mx-auto' %}
 {% endif %}
 
+
 <div class="{{ fields.background_colour }} w-full">
 
-     {% if fields.column_count == 'one' %}
+    {% if fields.column_count == 'one' %}
         <div class="relative justify-center px-4 {{columnOptions}} {{ marginOptions }}">
     {% else %}
        <div class="relative justify-center px-4 {{columnOptions}} {{ marginOptions }} container">
@@ -71,16 +76,25 @@
             {% endif %}
 
             {% if media_item.acf_fc_layout == 'list' %}
-                <ul class="flex flex-wrap justify-center w-full my-7 max-w-[1200px]">
+            <div class="my-8">
+                {% if media_item.list_title %}<h2 class="block w-full text-center">{{ media_item.list_title }}</h2>{% endif %}
+                <ul class="flex flex-wrap justify-center w-full mb-7 max-w-[1200px] mx-auto">
                     {% for item in media_item.listitems %}
                         <li class="flex flex-wrap w-full mb-4 text-lg font-bold md:w-auto md:mr-8 text-primary">{% if Post(item.pagelink).link %}<a href="{{ Post(item.pagelink).link }}" class="flex hover:text-primary-mid">{% endif %}{{ function('icon', 'tick-round', 'mr-2 flex-auto text-2xl') }}{{ item.text }}{% if Post(item.pagelink).link %}</a>{% endif %}</li>
                     {% endfor %}
                 </ul> 
+            </div>
             {% endif %}
 
             {% if media_item.acf_fc_layout == 'image' %}
-                <div class="w-full copy lg:w-1/2 max-w-[1000px] lg:ml-8">
-                    <img src="{{ Image((media_item.image_content)).src|resize(900,1000) }}" />
+                <div class="w-full copy lg:w-1/2 max-w-[1000px] lg:ml-8 mb-8 lg:hidden block">
+                    <img src="{{ Image((media_item.image_content)).src|resize(900,700) }}" />
+                </div>
+                <div class="w-full copy lg:w-1/2 max-w-[1000px] lg:ml-8 mb-8 hidden lg:block xl:hidden">
+                    <img src="{{ Image((media_item.image_content)).src|resize(900,1600) }}" />
+                </div>
+                <div class="w-full copy lg:w-1/2 max-w-[1000px] lg:ml-8 mb-8 hidden xl:block">
+                    <img src="{{ Image((media_item.image_content)).src|resize(900,1300) }}" />
                 </div>
             {% endif %}
 

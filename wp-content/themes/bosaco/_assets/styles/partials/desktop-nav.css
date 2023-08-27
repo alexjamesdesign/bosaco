@@ -139,3 +139,27 @@ Desktop Navs
     }
   }
 }
+
+.nt-sticky {
+  display: none;
+}
+.nt-shrink {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+
+  #menu-primary {
+    margin-top: 0;
+
+    a {
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

@@ -44,18 +44,6 @@ form {
   .submit {
     @apply text-primary;
   }
-
-  p {
-    &:nth-of-type(even) {
-      @apply lg:pl-2
-    }
-
-    &:last-of-type {
-      @apply pl-0;
-    }
-  }
-  
-
 }
 
 /*! purgecss end ignore */ 

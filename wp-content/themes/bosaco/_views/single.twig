@@ -2,6 +2,16 @@
 
 {% block content %}
 
+<div class="container">
+	<div class="block w-full lg:hidden">
+		<img src="{{ post.thumbnail.src|resize(800, 400) }}" class="w-full my-thumb-class" alt="Image for {{ post.title }}" />
+	</div>
+
+	<div class="hidden w-full lg:block">
+		<img src="{{ post.thumbnail.src|resize(1300, 300) }}" class="w-full my-thumb-class" alt="Image for {{ post.title }}" />
+	</div>
+</div>
+
 <div class="grid grid-cols-1 gap-8">
 
 	<div class="relative justify-center px-4 my-8 bg-white lg:flex lg:flex-wrap">

@@ -1,0 +1,132 @@
+/*---------------------------------------------------------------
+    Types of Roofs
+--------------------------------------------------------------- */
+
+.roof-item {
+    @apply float-left w-1/2 p-0 text-center lg:w-2/12 xl:w-2/12 bg-none;
+}
+
+.roof-types {
+    text-decoration: none;
+    clear: both;
+    list-style: none;
+    padding: 20px 0 0 0;
+    
+    .roof-item {
+     
+      float: left;
+      background-image: none;
+      padding: 0;
+      text-align: center;
+      
+      &:before {
+        content: '';
+      }
+
+  
+      span {
+        margin: 3px 0 10px 0;
+        line-height: 1em;
+        height: 2em;
+        display: block;
+        font-size: 1.0rem;
+        
+        @media only screen and (min-width: 1200px) {
+          font-size: 1.0rem;
+        }
+
+        .fas {
+            margin-left: 7px;
+        }
+  
+      }
+  
+      img {
+        opacity: 0.8;
+        width: 80%;
+      }
+  
+      &:hover {
+        a {
+          padding: 0;
+  
+          img {
+            opacity: 1;
+          }
+  
+          
+        }
+      }
+    }
+  
+    .roof-item-info {   
+      margin-top: 50px;
+      display : inline-block;
+      overflow: hidden;
+      opacity: 1;
+      padding: 0px 20px;
+      &:hover {
+        opacity: 1;
+      }
+   
+  
+      h4 {
+        border-top: 3px solid #A4C3E4;
+        font-size: 1.8em;
+        padding-top: 20px;
+        margin-bottom: 20px;
+      }
+  
+      img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+  
+        @media only screen and (min-width: 650px) {
+          float: left;
+          display: inline-block;
+          width: 40%; 
+        }
+  
+        @media only screen and (min-width: 800px) {
+          width: 20%;
+          max-width: 300px;
+          max-width: 200px;
+        }
+      }
+  
+      p {
+        font-size: 1.0em;
+        padding: 10px;
+  
+        @media only screen and (min-width: 650px) {
+          float: left;
+          display: inline-block;
+          width: 60%;
+        }
+  
+        @media only screen and (min-width: 800px) {
+          width: 75%;
+          padding: 7px 40px;
+        }
+  
+        @media only screen and (min-width: 1000px) {
+          width: 80%;
+        }
+      }
+    } 
+  
+    .fancybox-nav span {
+      visibility: visible;
+      top: 40%;
+  
+      @media only screen and (min-width: 650px) {
+        visibility: hidden;
+        top: 50%;
+      }
+    }
+    
+    .fancybox-nav:hover span {
+        visibility: visible;
+    }
+  }

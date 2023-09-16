@@ -1,0 +1,30 @@
+
+<ul class="roof-types">
+
+    {% for item in post.meta('roof_types') %}
+
+    {% set image = item.image %}
+    {% set roofStyle = item.title %}
+    
+        <li class="roof-item">
+            <a class="smooth-link" href="#{{ roofStyle }}">
+                <img src="{{ image.url }}" alt="{{ item.title }}"/>
+                <span>{{ item.title }} <i class="fas fa-chevron-down"></i></span>
+            </a>
+        </li>
+    {% endfor %}
+
+    {% for item in post.meta('roof_types') %}
+        {% set image = item.image %}
+        {% set roofStyle = item.title %}
+        
+        <div>
+            <div class="roof-item-info" id="{{ roofStyle }}">
+                <h4>{{ item.title }}</h4>
+                <img src="{{ image.url }}" alt="{{ item.title }}"/>
+                {{ item.description }}
+            </div>
+        </div>
+    {% endfor %}
+    
+</ul>

@@ -1380,6 +1380,12 @@ Desktop Navs
 		opacity: 1;
 	}
 }
+.sticky-nav {
+	display: none;
+}
+.sticky-nav-show {
+	display: flex;
+}
 .nt-sticky {
   display: none;
 }
@@ -1845,7 +1851,7 @@ h3, .h3 {
 	margin-bottom: 1.5rem;
 }
 .copy > p {
-	line-height: 1.625;
+	line-height: 2;
 }
 .copy a {
 	display: inline-block;
@@ -1861,6 +1867,10 @@ h3, .h3 {
 	text-align: center;
 }
 .copy ol, .copy ul {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.copy ol, .copy ul {
 	margin-bottom: 2rem;
 }
 .copy ol, .copy ul {
@@ -1870,7 +1880,7 @@ h3, .h3 {
 	margin-bottom: 0.5rem;
 }
 .copy ol li, .copy ul li {
-	line-height: 1.625;
+	line-height: 2;
 }
 .copy ul li {
 	list-style-type: disc;
@@ -2351,6 +2361,14 @@ h3, .h3 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
+.py-11 {
+	padding-top: 2.75rem;
+	padding-bottom: 2.75rem;
+}
+.px-2 {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
 .pb-6 {
 	padding-bottom: 1.5rem;
 }
@@ -2386,6 +2404,18 @@ h3, .h3 {
 }
 .pt-10 {
 	padding-top: 2.5rem;
+}
+.pt-11 {
+	padding-top: 2.75rem;
+}
+.pb-8 {
+	padding-bottom: 2rem;
+}
+.pb-4 {
+	padding-bottom: 1rem;
+}
+.pb-0 {
+	padding-bottom: 0px;
 }
 .text-center {
 	text-align: center;
@@ -2734,6 +2764,11 @@ h3, .h3 {
 	.lg\:px-6 {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
+	}
+
+	.lg\:px-8 {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 
 	.lg\:px-0 {

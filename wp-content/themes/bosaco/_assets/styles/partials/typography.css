@@ -35,7 +35,7 @@ h3, .h3 {
 
 .copy {
   > p {
-    @apply mb-6 leading-relaxed;
+    @apply mb-6 leading-loose;
   }
 
   a {
@@ -52,10 +52,10 @@ h3, .h3 {
 
   ol,
   ul {
-    @apply pl-4 mb-8;
+    @apply pl-4 mx-4 mb-8;
 
     li {
-      @apply mb-2 leading-relaxed;
+      @apply mb-2 leading-loose;
     }
   }
 

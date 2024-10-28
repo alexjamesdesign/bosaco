@@ -2,12 +2,16 @@
 
 {% block content %}
 
-{% include '_views/_components/roof-types.twig' %}
+	<div class="max-w-[1000px] copy mx-auto pt-11 pb-0 px-4">
 
-	<div class="grid grid-cols-1 gap-8">
+		<h1 style="text-align: center;">Roof Types</h1>
 
 		{{post.content}}
 
 	</div>
+
+{% include '_views/_components/roof-types.twig' %}
+
+	
 
 {% endblock %}

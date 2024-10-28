@@ -7,10 +7,19 @@
 
 		// Smaller header
 		$(window).scroll(function() {
-			if ($(document).scrollTop() > 150) {
+			if ($(document).scrollTop() > 200) {
 			  $('.nt-sticky').addClass('nt-shrink');
 			} else {
 			  $('.nt-sticky').removeClass('nt-shrink');
+			}
+		});
+
+		// Smaller header
+		$(window).scroll(function() {
+			if ($(document).scrollTop() > 200) {
+			  $('.sticky-nav').addClass('sticky-nav-show');
+			} else {
+			  $('.sticky-nav').removeClass('sticky-nav-show');
 			}
 		});
 

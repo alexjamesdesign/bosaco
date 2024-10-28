@@ -140,9 +140,18 @@ Desktop Navs
   }
 }
 
+.sticky-nav {
+  @apply hidden;
+}
+
+.sticky-nav-show {
+  @apply flex;
+}
+
 .nt-sticky {
   display: none;
 }
+
 .nt-shrink {
   display: block;
   position: fixed;

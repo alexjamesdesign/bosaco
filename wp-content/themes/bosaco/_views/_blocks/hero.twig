@@ -10,13 +10,36 @@
   SupportsMultiple: false
 #}
 
+<style>
+  .hero-outer {
+    background: rgba(0, 129, 149, 0.65) url('{{ hero_small|towebp }}');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 800px) {
+    .hero-outer {
+      background: rgba(0, 129, 149, 0.65) url('{{ hero_medium|towebp }}');
+      background-size: cover;
+       background-position: center;
+    }
+  }
+  @media (min-width: 1200px) {
+    .hero-outer {
+      background: rgba(0, 129, 149, 0.65) url('{{ hero_large|towebp }}');
+      background-size: cover;
+      background-position: center;
+    }
+
+</style>
+
 {% if fields.margin_options =='ept' %}
     {% set marginOptions = 'pt-32' %}
 {% elseif fields.margin_options =='epb' %}
     {% set marginOptions = 'pb-16' %}
 {% endif %}
 
-<div class="relative flex w-full bg-secondary-light {{ marginOptions }}">
+<div class="hero-outer relative flex w-full bg-secondary-light {{ marginOptions }}">
 
 	<div class="flex flex-wrap justify-center w-full px-4 py-12 text-center md:px-8 bg-secondary-light">
     

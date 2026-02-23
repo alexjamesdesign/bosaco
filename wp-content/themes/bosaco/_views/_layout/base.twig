@@ -7,7 +7,9 @@
 		<meta
 		name="viewport" content="width=device-width, initial-scale=1">
 
-		<meta name="robots" content="noindex, nofollow">
+		{% if 'alexjamesdesign.co.uk' in site.link or 'leblek.com' in site.link or 'pinpointhq.co.uk' in site.link %}
+			<meta name="robots" content="noindex">
+		{% endif %}
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
